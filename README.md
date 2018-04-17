@@ -1,3 +1,3 @@
-# Hendersonville Running Club
+# Hendersonville Race Series
 
-This is the source code for the HRC group.
+This is the source code for the HRS group.

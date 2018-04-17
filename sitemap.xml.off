@@ -4,21 +4,9 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 
 <url>
 
-    <loc>https://www.hendersonvillerunningclub.com</loc>
+    <loc>https://www.hendersonvilleraceseries.com</loc>
 
-    <lastmod>2018-04-09</lastmod>
-
-    <changefreq>weekly</changefreq>
-
-    <priority>0.5</priority>
-
-</url>  
-
-<url>
-
-    <loc>https://www.hendersonvillerunningclub.com/index.html</loc>
-
-    <lastmod>2018-04-09</lastmod>
+    <lastmod>2018-17-09</lastmod>
 
     <changefreq>weekly</changefreq>
 
@@ -28,9 +16,21 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 
 <url>
 
-    <loc>https://www.hendersonvillerunningclub.com/</loc>
+    <loc>https://www.hendersonvilleraceseries.com/index.html</loc>
 
-    <lastmod>2018-04-09</lastmod>
+    <lastmod>2018-17-09</lastmod>
+
+    <changefreq>weekly</changefreq>
+
+    <priority>0.5</priority>
+
+</url>  
+
+<url>
+
+    <loc>https://www.hendersonvilleraceseries.com/</loc>
+
+    <lastmod>2018-17-09</lastmod>
 
     <changefreq>weekly</changefreq>
 
