@@ -357,8 +357,8 @@ color: #fff;
 .Portfolio-box{
 	text-align:center;
 	margin-bottom:30px;
-	height:350px;
-	width:350px;
+	height:150px;
+	width:150px;
 	overflow:hidden;
 	float:left;
 	padding:0;
@@ -786,7 +786,7 @@ border: 2px solid #fff;
 }
 .copyright, .credits{
 	color:#cccccc;
-	font-size:14px;
+	font-size:10px;
 	display:block;
 	text-align:center;
 }
@@ -801,6 +801,15 @@ border: 2px solid #fff;
 
 .copyright a:hover, .credits a:hover {
 	color: #fff;
+}
+
+.design {
+	color: #ccc !important;
+	font-size: 10px;
+	text-align: center;
+}
+.design a {
+	color: #ccc !important;
 }
 
 .res-nav_click {
@@ -873,3 +882,113 @@ border: 2px solid #fff;
 	animation-delay: 1.2s; 
 	-webkit-animation-delay: 1.2s; 
 }
+
+
+
+/*Flex items*/
+.list {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  .races-item,
+  .social-item,
+  .weekly-item,
+  .series-item,
+  .series-header-item {
+	display: flex;
+	padding: 0.5em;
+	width: 100%;
+  }
+  @media all and (min-width: 40em) {
+	.races-item,
+	.social-item,
+	.weekly-item,
+	.series-item {
+	  width: 50%;
+	}
+	.series-header-item {
+	  width: 100%;
+	}
+  }
+  @media all and (min-width: 60em) {
+	.social-item {
+	  width: 50%;
+	}
+	.races-item,
+	.weekly-item {
+	  width: 33.3%;
+	}
+	.series-item {
+	  width: 25%;
+	}
+	.series-header-item {
+	  width: 100%;
+	}
+  }
+  .social-content {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	width: 100%;
+  }
+  .weekly-content {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	width: 100%;
+	border: 1px solid #eaeaea;
+  }
+  .news-content,
+  .races-content,
+  .series-content,
+  .series-header-content {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	width: 100%;
+	border: 1px solid #eaeaea;
+	cursor: pointer;
+  }
+  .news-content h4,
+  .races-more-content h6,
+  .series-content h6,
+  .series-header-content h6 {
+	margin: 0 0;
+  }
+  .races-more-content {
+	background-color: #f9f9f9;
+	border: 1px solid #eaeaea;
+	display: flex;
+	flex-direction: column;
+	width: 46%;
+	padding: 1em;
+	margin: 15px;
+	cursor: pointer;
+  }
+  .races-content,
+  .social-content,
+  .weekly-content,
+  .series-content p {
+	flex: 1 0 auto;
+  }
+  .news-item {
+	color: #666;
+  }
+  
+  /* local runs */
+.media-object {
+	height: 75px;
+	width: 75px;
+  }
+  .media {
+	margin-top: 25px !important;
+  }
+  .media, .media-body {
+	background-color: #f9f9f9;
+	padding: 15px;
+  }
+  .media, .media-container {
+	border: 1px solid #eaeaea;
+  }
