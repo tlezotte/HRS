@@ -184,7 +184,7 @@ p {
 
 .link {
   padding: 15px 35px;
-  background: #7cc576;
+  background: #f26822;
   color: #fff !important;
   font-size: 16px;
   font-weight: 400;
@@ -200,8 +200,9 @@ p {
 }
 .link:hover {
   text-decoration: none;
-  color: #7cc576 !important;
+  color: #038bc7 !important;
   background: #fff;
+  border: 1px solid #038bc7;
 }
 
 .link:active,
@@ -446,7 +447,7 @@ img {
 /* Clients
 ---------------------------------*/
 .client-part {
-  background: url(../img/section-bg1.jpg) center center no-repeat;
+  /* background: url(../img/section-bg1.jpg) center center no-repeat; */
   background-size: cover;
   padding: 55px 0;
   text-align: center;
@@ -633,7 +634,7 @@ img {
 .team-leader ul li a.fa-pinterest:hover {
   color: #cb2026;
 }
-.team-leader ul li a.fa-google-plus:hover {
+.team-leader ul li a.fa-envelope:hover {
   color: #dd4b39;
 }
 
@@ -726,7 +727,7 @@ img {
 .pinterest a:hover {
   background: #cb2026;
 }
-.gplus a:hover {
+.email a:hover {
   background: #dd4b39;
 }
 .dribbble a:hover {
