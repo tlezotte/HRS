@@ -207,7 +207,7 @@ p {
 
 .link:active,
 .link:focus {
-  background: #7cc576;
+  background: #f26822;
   text-decoration: none;
   color: #fff !important;
 }
@@ -246,7 +246,7 @@ p {
 
 .main-nav li a:hover {
   text-decoration: none;
-  color: #7cc576;
+  color: #f26822;
 }
 
 .small-logo {
@@ -333,7 +333,7 @@ p {
 .Learn-More {
   display: inline-block;
   padding: 0 5px 0 0;
-  color: #7cc576;
+  color: #f26822;
   font-size: 16px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
@@ -386,7 +386,7 @@ p {
 #filters button:hover,
 #sorts button:hover,
 .Portfolio-nav li a:hover {
-  background: #7cc576;
+  background: #f26822;
   color: #fff;
   text-decoration: none;
 }
@@ -417,7 +417,7 @@ p {
 }
 #filters button.current,
 .Portfolio-nav li a.current {
-  background: #7cc576;
+  background: #f26822;
   color: #fff;
   text-decoration: none;
 }
@@ -491,13 +491,13 @@ img {
   width: 68px;
   height: 68px;
   margin: 0 auto;
-  border: 2px solid #7cc576;
+  border: 2px solid #f26822;
   border-radius: 50%;
   display: block;
   line-height: 68px;
   text-align: center;
   font-size: 27px;
-  color: #7cc576;
+  color: #f26822;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -510,7 +510,7 @@ img {
 }
 
 .c-logo-part {
-  background: #7cc576;
+  background: #6e6e6ea6;
   padding: 25px 0;
   filter: alpha(opacity=60);
 }
@@ -641,7 +641,7 @@ img {
 /* Talk Business
 ---------------------------------*/
 .business-talking {
-  background: url(../img/section-bg2.jpg) top center no-repeat;
+  /* background: url(../img/section-bg2.jpg) top center no-repeat; */
   background-size: cover;
   padding: 60px 0 10px;
   text-align: center;
@@ -753,7 +753,7 @@ img {
   -webkit-transition: all 0.3s ease-in-out;
 }
 .input-text:focus {
-  border: 1px solid #7cc576;
+  border: 1px solid #f26822;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
     0 0 8px rgba(124, 197, 118, 0.3);
@@ -771,7 +771,7 @@ img {
 .input-btn {
   width: 175px;
   height: 50px;
-  background: #7cc576;
+  background: #f26822;
   border-radius: 4px;
   color: #ffffff;
   font-size: 14px;
@@ -798,8 +798,8 @@ img {
 }
 
 #sendmessage {
-  color: #7cc576;
-  border: 1px solid #7cc576;
+  color: #f26822;
+  border: 1px solid #f26822;
   display: none;
   text-align: center;
   padding: 15px;
@@ -844,7 +844,7 @@ img {
 }
 .copyright a,
 .credits a {
-  color: #7cc576;
+  color: #f26822;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
@@ -885,7 +885,7 @@ img {
 .res-nav_click:hover,
 .res-nav_click:active,
 .res-nav_click:focus {
-  color: #7cc576 !important;
+  color: #f26822 !important;
 }
 
 .portfolioContainer {
@@ -986,6 +986,7 @@ img {
   border: 1px solid #eaeaea;
   cursor: pointer;
 }
+.c-logo-part h5,
 .series-content h5,
 .series-content h6,
 .series-header-content h6 {
@@ -993,6 +994,13 @@ img {
   /* font-family: Montserrat, sans-serif; */
   font-weight: 700;
   letter-spacing: 1px;
+}
+.c-logo-part h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgb(216, 213, 213);
+  text-align: center;
 }
 .series-content h6 {
   margin: 0 0 30px !important;
