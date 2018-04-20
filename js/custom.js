@@ -1,4 +1,7 @@
 $(function() {
+  var now = moment().format("YYYY-MM-DD");
+
+
   // Since there's no list-group/tab integration in Bootstrap
   $(".list-group-item").on("click", function(e) {
     var previous = $(this)
@@ -147,4 +150,43 @@ $(function() {
       $(this).addClass("is-checked");
     });
   });
+
+  // -- news feed
+	var newsURL = '/news.json?start_date=' + now;
+console.log(newsURL);
+	var group_news = $('#group-news');
+console.log(group_news);
+	$.getJSON(newsURL, function (data) {
+    console.log(data);
+		var output = "";
+		var news_count = 0;
+		for (var i in data.results) {
+      console.log("i=" + i);
+			if (moment(data.results[i].date).diff(now, 'days') >= 0 ) {
+				news_count++;
+				// output += "<div class='news news-content'>";
+				// output += "<div class='news-body text-left'>";
+				// output += "<h4 class='news-heading text-left'>" + data.results[i].title + "</h4>";
+				// output += "<a href='" + data.results[i].url + "' target='hrc'>";
+				// output += "<div class='news-item'>";
+				// output += "<i class='far fa-clock' aria-hidden='true'></i> " + moment(data.results[i].date).format("dddd, MMMM DD, YYYY") + " &#8226; " + data.results[i].time + "</div>";
+				// output += "<div class='news-item'>";
+				// output += "<i class='fas fa-map-marker-alt' aria-hidden='true'></i> " + data.results[i].location + "</div>";
+				// output += "</a>";
+				// output += "</div>";
+				// output += "</div>";
+				output += "<div class='local-content element-item 10k'>";
+				output += "<h4>" + data.results[i].title + "</h4>";
+				output += "<p class='thedate'>";
+				output += "<i class='far fa-clock' aria-hidden='true'></i> " + moment(data.results[i].date).format("dddd, MMMM DD, YYYY") + " &#8226; " + data.results[i].time;
+				output += "</p>";
+				output += "<p class='thelocation'>";
+				output += "<i class='far fa-map' aria-hidden='true'></i>" + data.results[i].location;
+				output += "</p>";
+				output += "</div>";
+			}
+    }
+    console.log(output);
+		group_news.html(output);
+	});
 });

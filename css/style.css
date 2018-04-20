@@ -366,6 +366,9 @@ p {
   margin: 0 10px;
   display: inline;
 }
+#filters {
+  padding-top: 50px;
+}
 #filters button,
 #sorts button,
 .Portfolio-nav li a {
@@ -390,7 +393,12 @@ p {
   color: #fff;
   text-decoration: none;
 }
-
+#filters button.current,
+.Portfolio-nav li a.current {
+  background: #f26822;
+  color: #fff;
+  text-decoration: none;
+}
 .portfolioContainer {
   margin: 0 auto;
   padding-left: 15px;
@@ -414,12 +422,6 @@ p {
 
 .Portfolio-box img:hover {
   opacity: 0.6;
-}
-#filters button.current,
-.Portfolio-nav li a.current {
-  background: #f26822;
-  color: #fff;
-  text-decoration: none;
 }
 img {
   max-width: 100%;
@@ -659,7 +661,7 @@ img {
 /* Contact
 ---------------------------------*/
 .main-section.contact {
-  padding: 90px 0 100px;
+  padding: 50px 0 100px;
 }
 
 .main-section.contact {
@@ -693,10 +695,10 @@ img {
 }
 .social-link {
   padding: 35px 0;
-  margin: 0 0 0 68px;
-  display: block;
+  /* margin: 0 0 0 68px; */
   overflow: hidden;
   list-style: none;
+  display: inline-block;
 }
 .social-link li {
   float: left;
@@ -1055,8 +1057,6 @@ img {
   font-weight: 700;
 }
 
-
-
 /* 
 .button {
 	display: inline-block;
@@ -1091,10 +1091,10 @@ img {
   .button:active {
 	box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
   } */
-  
-  /* ---- button-group ---- */
-  
-  /* .button-group {
+
+/* ---- button-group ---- */
+
+/* .button-group {
 	margin-bottom: 20px;
   }
   
@@ -1113,81 +1113,125 @@ img {
   
   .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
   .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; } */
-  
-  /* ---- isotope ---- */
-  
-  
-  /* clear fix */
-  .grid:after {
-	content: '';
-	display: block;
-	clear: both;
-  }
-  
-  /* ---- .element-item ---- */
-  
-  .element-item {
-	position: relative;
-	float: left;
-	width: 200px;
-	height: 200px;
-	margin: 5px;
-	padding: 10px;
-	/* background: #888;
+
+/* ---- isotope ---- */
+
+/* clear fix */
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  padding: 10px;
+  /* background: #888;
 	color: #262524; */
-  }
-  
-  .element-item > * {
-	margin: 0;
-	padding: 0;
-  }
-  
-  .element-item .name {
-	position: absolute;
-  
-	left: 10px;
-	top: 60px;
-	text-transform: none;
-	letter-spacing: 0;
-	font-size: 12px;
-	font-weight: normal;
-  }
-  
-  .element-item .symbol {
-	position: absolute;
-	left: 10px;
-	top: 0px;
-	font-size: 42px;
-	font-weight: bold;
-	color: white;
-  }
-  
-  .element-item .number {
-	position: absolute;
-	right: 8px;
-	top: 5px;
-  }
-  
-  .element-item .weight {
-	position: absolute;
-	left: 10px;
-	top: 76px;
-	font-size: 12px;
-  }
-  
-  .element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
-  .element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
-  .element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
-  .element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
-  .element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
-  .element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
-  .element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
-  .element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
-  .element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
-  .element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+}
 
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
 
-  .element-item img {
-    filter: blur(5px);
-  }
-  
+.element-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.element-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+}
+
+.element-item.alkali {
+  background: #f00;
+  background: hsl(0, 100%, 50%);
+}
+.element-item.alkaline-earth {
+  background: #f80;
+  background: hsl(36, 100%, 50%);
+}
+.element-item.lanthanoid {
+  background: #ff0;
+  background: hsl(72, 100%, 50%);
+}
+.element-item.actinoid {
+  background: #0f0;
+  background: hsl(108, 100%, 50%);
+}
+.element-item.transition {
+  background: #0f8;
+  background: hsl(144, 100%, 50%);
+}
+.element-item.post-transition {
+  background: #0ff;
+  background: hsl(180, 100%, 50%);
+}
+.element-item.metalloid {
+  background: #08f;
+  background: hsl(216, 100%, 50%);
+}
+.element-item.diatomic {
+  background: #00f;
+  background: hsl(252, 100%, 50%);
+}
+.element-item.halogen {
+  background: #f0f;
+  background: hsl(288, 100%, 50%);
+}
+.element-item.noble-gas {
+  background: #f08;
+  background: hsl(324, 100%, 50%);
+}
+
+.element-item img {
+  filter: blur(5px);
+}
+
+.panel-heading {
+  padding: 0;
+}
+.panel-heading h2 {
+  font-size: 20px;
+}
+
+.panel-help a:hover {
+  text-decoration: none !important;
+}
+
+ul.special_bullet li:before {
+  color: #000;
+  content: "\27bd \0020";
+  list-style: none;
+}
