@@ -1230,8 +1230,22 @@ img {
   text-decoration: none !important;
 }
 
-ul.special_bullet li:before {
-  color: #000;
-  content: "\27bd \0020";
-  list-style: none;
+.trophy::before {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f091";
+  display: inline-block;
+  margin-left: -1.5em;
+  width: 1.5em;
+  padding-bottom: 5px;
+}
+
+.health::before {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f06c";
+  display: inline-block;
+  margin-left: -1.5em;
+  width: 1.5em;
+  padding-bottom: 5px;
 }
