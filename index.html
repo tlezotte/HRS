@@ -297,60 +297,73 @@
 
 	<!-- Section: local -->
 	<section class="main-section alabaster" id="local" style="height:600px">
-		<div class=" col-md-10 col-md-offset-1">
-			<h2>Local Races</h2>
-			<h6>Races in Sumner County and the surrounding area</h6>
-			<div id="filters" class="button-group wow fadeIn delay-02s text-center">
-				<button class="button current" data-filter="*">All</button>
-				<button class="button" data-filter=".5k">5k</button>
-				<button class="button" data-filter=".10k">10k</button>
-				<button class="button" data-filter=".half">Half Marathon</button>
-				<button class="button" data-filter=".marathon">Marathon</button>
+		<h2>Local Races</h2>
+		<h6>Races in Sumner County and the surrounding area</h6>
+		<div class="row">
+			<div class=" col-md-5 col-md-offset-4">
+				<div id="filters" class="button-group wow fadeIn delay-02s">
+					<button class="button is-checked" data-filter="*">All</button>
+					<button class="button" data-filter=".1m">1m</button>
+					<button class="button" data-filter=".5k">5k</button>
+					<button class="button" data-filter=".10k">10k</button>
+					<button class="button" data-filter=".half">Half Marathon</button>
+					<button class="button" data-filter=".marathon">Marathon</button>
+				</div>
 			</div>
-
-			<!-- <h2>Sort</h2>
+		</div>
+		<!-- <h2>Sort</h2>
 			<div id="sorts" class="button-group wow fadeIn delay-02s">  
 			  <button class="button is-checked" data-sort-by="original-order">date</button>
 			  <button class="button" data-sort-by="name">name</button>
 			</div> -->
-
-			<div class="grid">
-				<div id="group-news" class="wow bounceInUp" data-wow-delay="0.6s"></div>
-				<div class="local-content element-item 10k">
-					<h4>Hawk Walk & Run</h4>
-					<p class="thedate">
-						<i class="far fa-clock" aria-hidden="true"></i> Wednesday 6:30pm
-					</p>
-					<p class="thelocation">
-						<i class="far fa-map" aria-hidden="true"></i> Fleet Feet
-					</p>
-				</div>
-				<div class="local-content element-item 5k">
-					<h4>Hawk Walk & Run</h4>
-					<p class="thedate">
-						<i class="far fa-clock" aria-hidden="true"></i> Wednesday 6:30pm
-					</p>
-					<p class="thelocation">
-						<i class="far fa-map" aria-hidden="true"></i> Fleet Feet
-					</p>
-				</div>
-				<div class="local-content element-item 10k">
-					<h4>Hawk Walk & Run</h4>
-					<p class="thedate">
-						<i class="far fa-clock" aria-hidden="true"></i> Wednesday 6:30pm
-					</p>
-					<p class="thelocation">
-						<i class="far fa-map" aria-hidden="true"></i> Fleet Feet
-					</p>
-				</div>
-				<div class="local-content element-item half">
-					<h4>Hawk Walk & Run</h4>
-					<p class="thedate">
-						<i class="far fa-clock" aria-hidden="true"></i> Wednesday 6:30pm
-					</p>
-					<p class="thelocation">
-						<i class="far fa-map" aria-hidden="true"></i> Fleet Feet
-					</p>
+		<div class="row">
+			<div class=" col-md-10 col-md-offset-1">
+				<div class="grid">
+					<div id="group-news" class="wow bounceInUp" data-wow-delay="0.6s"></div>
+					<div class="local-content element-item 1m 5k">
+						<h4>
+							<a href="http://mhm.sumnerschools.org/index.php/students/346-hawk-walk-and-run-5k">Hawk Walk & Run</a>
+						</h4>
+						<p class="thedate">
+							<i class="far fa-clock" aria-hidden="true"></i> Saturday, April 21, 2018
+						</p>
+						<p class="thelocation">
+							<i class="far fa-map" aria-hidden="true"></i> Merrol Hyde Magnet School
+						</p>
+					</div>
+					<div class="local-content element-item 1m 5k">
+						<h4>
+							<a href="#">32nd Annual Strawberry Stride</a>
+						</h4>
+						<p class="thedate">
+							<i class="far fa-clock" aria-hidden="true"></i> Saturday, May 12, 2018
+						</p>
+						<p class="thelocation">
+							<i class="far fa-map" aria-hidden="true"></i> Portland High School
+						</p>
+					</div>
+					<div class="local-content element-item 5k">
+						<h4>
+							<a href="#">Blue & Gold 5K</a>
+						</h4>
+						<p class="thedate">
+							<i class="far fa-clock" aria-hidden="true"></i> Saturday, May 19, 2018
+						</p>
+						<p class="thelocation">
+							<i class="far fa-map" aria-hidden="true"></i> Wilson Central High School
+						</p>
+					</div>
+					<div class="local-content element-item 1m 5k">
+						<h4>
+							<a href="http://www.sumneracademy.org/pto5k">Sumner Academy 5K and Fun Run</a>
+						</h4>
+						<p class="thedate">
+							<i class="far fa-clock" aria-hidden="true"></i> Saturday, September 15, 2018
+						</p>
+						<p class="thelocation">
+							<i class="far fa-map" aria-hidden="true"></i> Gallatin Civic Center
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -544,8 +557,10 @@
 	</footer>
 
 	<!-- Core JavaScript Files -->
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	 crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollToFixed/1.0.8/jquery-scrolltofixed-min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.5/isotope.pkgd.min.js"></script>

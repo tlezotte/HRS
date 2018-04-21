@@ -58,98 +58,75 @@ $(function() {
     colW = 375,
     columns = null;
 
-//   $container.isotope({
-//     // disable window resizing
-//     resizable: true,
-//     masonry: {
-//       columnWidth: colW
-//     }
-//   });
 
-//   $(window)
-//     .smartresize(function() {
-//       // check if columns has changed
-//       var currentColumns = Math.floor(($body.width() - 30) / colW);
-//       if (currentColumns !== columns) {
-//         // set new column count
-//         columns = currentColumns;
-//         // apply width to container manually, then trigger relayout
-//         $container.width(columns * colW).isotope("reLayout");
-//       }
-//     })
-//     .smartresize(); // trigger resize to set container width
-
-//   $(".portfolioFilter a").click(function() {
-//     $(".portfolioFilter .current").removeClass("current");
-//     $(this).addClass("current");
-
-//     var selector = $(this).attr("data-filter");
-//     $container.isotope({
-//       filter: selector
-//     });
-//     return false;
-//   });
 
 
   
-  // init Isotope
-  var $grid = $(".grid").isotope({
-    itemSelector: ".element-item",
-    layoutMode: "fitRows",
-    getSortData: {
-      name: ".name",
-      symbol: ".symbol",
-      number: ".number parseInt",
-      category: "[data-category]",
-      weight: function(itemElem) {
-        var weight = $(itemElem)
-          .find(".weight")
-          .text();
-        return parseFloat(weight.replace(/[\(\)]/g, ""));
-      }
+// external js: isotope.pkgd.js
+
+
+// init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.element-item',
+  layoutMode: 'fitRows',
+  getSortData: {
+    name: '.name',
+    symbol: '.symbol',
+    number: '.number parseInt',
+    category: '[data-category]',
+    weight: function( itemElem ) {
+      var weight = $( itemElem ).find('.weight').text();
+      return parseFloat( weight.replace( /[\(\)]/g, '') );
     }
-  });
+  }
+});
 
-  // filter functions
-  var filterFns = {
-    // show if number is greater than 50
-    numberGreaterThan50: function() {
-      var number = $(this)
-        .find(".number")
-        .text();
-      return parseInt(number, 10) > 50;
-    },
-    // show if name ends with -ium
-    ium: function() {
-      var name = $(this)
-        .find(".name")
-        .text();
-      return name.match(/ium$/);
-    }
-  };
+// filter functions
+var filterFns = {
+  // show if number is greater than 50
+  numberGreaterThan50: function() {
+    var number = $(this).find('.number').text();
+    return parseInt( number, 10 ) > 50;
+  },
+  // show if name ends with -ium
+  ium: function() {
+    var name = $(this).find('.name').text();
+    return name.match( /ium$/ );
+  }
+};
 
-  // bind filter button click
-  $("#filters").on("click", "button", function() {
-    var filterValue = $(this).attr("data-filter");
-    // use filterFn if matches value
-    filterValue = filterFns[filterValue] || filterValue;
-    $grid.isotope({ filter: filterValue });
-  });
+// bind filter button click
+$('#filters').on( 'click', 'button', function() {
+  var filterValue = $( this ).attr('data-filter');
+  // use filterFn if matches value
+  filterValue = filterFns[ filterValue ] || filterValue;
+  $grid.isotope({ filter: filterValue });
+});
 
-  // bind sort button click
-  $("#sorts").on("click", "button", function() {
-    var sortByValue = $(this).attr("data-sort-by");
-    $grid.isotope({ sortBy: sortByValue });
-  });
+// bind sort button click
+$('#sorts').on( 'click', 'button', function() {
+  var sortByValue = $(this).attr('data-sort-by');
+  $grid.isotope({ sortBy: sortByValue });
+});
 
-  // change is-checked class on buttons
-  $(".button-group").each(function(i, buttonGroup) {
-    var $buttonGroup = $(buttonGroup);
-    $buttonGroup.on("click", "button", function() {
-      $buttonGroup.find(".is-checked").removeClass("is-checked");
-      $(this).addClass("is-checked");
-    });
+// change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
   });
+});
+  
+
+	// -- make series into button
+	$(".local-content").on("click",function() {
+		//window.location = $(this).find("a").attr("href"); 
+		var url = $(this).find("a").attr("href");
+		window.open(url, 'hrc');
+		return false;
+	});
+
 
   // -- news feed
 	var newsURL = '/news.json?start_date=' + now;
