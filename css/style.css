@@ -133,15 +133,15 @@ p {
 
 .header {
   text-align: center;
-  background: url(../img/pw_maze_black_2X.png) left top repeat;
-  padding: 280px 0;
+  /* background: url(../img/pw_maze_black_2X.png) left top repeat; */
+  padding: 150px 0;
 }
 .header2 {
   text-align: center;
   padding: 280px 0;
 }
 .logo {
-  width: 130px;
+  width: 500px;
   margin: 0 auto 35px;
 }
 .header h1 {
@@ -996,18 +996,29 @@ img {
   color: rgb(216, 213, 213);
   text-align: center;
 }
+.series-content p {
+  flex: 1 0 auto;
+  /* margin: 0 0 20px; */
+  font-size: 16px;
+  line-height: 1.6em;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: auto;
+}
 .series-content h6 {
-  margin: 0 0 30px !important;
+  margin: 0 0 10px !important;
 }
 .series-header-content h6 {
   margin: 0 0 !important;
 }
-.local-content p,
-.series-content p {
-  flex: 1 0 auto;
-  margin: 0 0 20px;
+.local-content p {
+  /* flex: 1 0 auto; */
+  /* margin: 0 0 20px; */
   font-size: 16px;
   line-height: 1.6em;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: auto;
 }
 .local-content h4 {
   color: #888888;
@@ -1016,6 +1027,7 @@ img {
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 14px;
+  text-align: center;
 }
 .local-content {
   background-color: #fff;
