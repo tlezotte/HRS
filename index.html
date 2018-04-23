@@ -368,34 +368,34 @@
 			</div>
 		</div>
 		<h6 class="hidden">Want your race listed here. <a href="mailto:tom@lezotte.net?subject=HRS Local Race&body=Name%3A%0D%0ADate%3A%0D%0ATime%3A%0D%0ALocation%3A%0D%0AURL%3A%0D%0A">Please submit the details</a></h6>
-		<h6 id="click_submit_local">Want your race listed here. Please submit the details.</h6>
-		<div class="col-md-6 col-md-offset-3 hidden" id="submit_local" >
+		<h6 id="click_submit_local"><i class="fas fa-plus"></i> Want your race listed here. Please submit the details.</h6>
+		<div class="col-md-6 col-md-offset-3" id="submit_local" style="display: none;" >
 			<div class="form">
 				<div id="sendmessage">Your message has been sent. Thank you!</div>
 				<div id="errormessage"></div>
 				<form action="mailto:tom@lezotte.net" method="post" enctype="text/plain" role="form" class="contactForm">
 					<div class="form-group">
-						<input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+						<input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
 						<div class="validation"></div>
 					</div>
 					<div class="form-group">
-						<input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+						<input type="text" class="form-control input-text" name="name" id="name" placeholder="Race Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
 						<div class="validation"></div>
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control input-text" name="date" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please the date of the race" />
+						<input type="date" class="form-control input-text" name="date" id="date" placeholder="Race Date" data-rule="minlen:4" data-rule="date" data-msg="Please the date of the race" />
 						<div class="validation"></div>
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control input-text" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please the time of the race" />
+						<input type="time" class="form-control input-text" name="time" id="time" placeholder="Race Time" data-rule="minlen:4" data-rule="time" data-msg="Please the time of the race" />
 						<div class="validation"></div>
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control input-text" name="url" id="url" placeholder="Race URL" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+						<input type="url" class="form-control input-text" name="url" id="url" placeholder="Race URL" data-rule="minlen:4" data-rule="url" data-msg="Please enter at least 8 chars of subject" required />
 						<div class="validation"></div>
 					</div>
 
-					<div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
+					<div class="text-left"><button type="submit" class="input-btn">Send Message</button></div>
 				</form>
 			</div>
 		</div>
@@ -404,7 +404,7 @@
 
 	<!-- Section: faq -->
 	<section class="questions" id="faq">
-		<div class="container">
+		<div class="container col-md-12">
 			<h2>FAQ</h2>
 			<h6>Here are some Frequently Asked Questions</h6>
 		</div>
