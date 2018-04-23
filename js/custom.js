@@ -8,6 +8,10 @@ $(function() {
     Cookies.set('splash', 'true', { expires: 30 });
   }
 
+  $("#click_submit_local").on("click", function(event) {
+    $("#submit_local").slideToggle("slow");
+  });
+
   // Since there's no list-group/tab integration in Bootstrap
   $(".list-group-item").on("click", function(e) {
     var previous = $(this)
