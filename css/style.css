@@ -774,7 +774,7 @@ img {
   overflow: auto;
 }
 .input-btn {
-  width: 175px;
+  /* width: 175px; */
   height: 50px;
   background: #f26822;
   border-radius: 4px;
@@ -790,7 +790,7 @@ img {
 }
 
 .input-btn:hover {
-  background: #111;
+  /* background: #111; */
   color: #fff;
 }
 

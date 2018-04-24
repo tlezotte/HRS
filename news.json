@@ -4,17 +4,17 @@
       "title": "Wicked Wine Run",
       "date": "2018-04-21",
       "time": "5:00pm",
-      "location": "4125 Whites Creek Pike, Nashville, TN",
+      "location": "Hendersonville, TN",
       "url": "http://wickedwinerun.com/locations/tennessee-nashville/",
-      "tags": ["1mile","5k"]
+      "tags": "1m 5k"
     },
     {
       "title": "Run, Run, Run",
-      "date": "2018-04-21",
+      "date": "2018-05-21",
       "time": "5:00pm",
-      "location": "2525 West End, Nashville, TN",
+      "location": "Nashville, TN",
       "url": "http://wickedwinerun.com/locations/tennessee-nashville/",
-      "tags": ["1mile","10k"]
-    },
+      "tags": "1m 10k"
+    }
   ]
 }

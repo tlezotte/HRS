@@ -1,6 +1,34 @@
 $(function() {
   var now = moment().format("YYYY-MM-DD");
 
+
+  // -- local races feed
+  var newsURL = "news.json?start_date=" + now;
+
+  var group_news = $(".grid");
+
+  $.getJSON(newsURL, function(data) {
+
+    var output = "";
+    for (var i in data.results) {
+      if (moment(data.results[i].date).diff(now, "days") >= 0) {
+        output += "<div class='local-content element-item text-center " + data.results[i].tags + "'>";
+        output += "<h4>" + data.results[i].title + "</h4>";
+        output += "<p class='thedate'>";
+        output += "  <i class='far fa-clock' aria-hidden='true'></i> " + moment(data.results[i].date).format("dddd MMMM DD, YYYY");
+        output += " &#8226; " + data.results[i].time;
+        output += "</p>";
+        output += "<p class='thelocation'>";
+        output += "  <i class='fas fa-map-marker-alt' aria-hidden='true'></i> " + data.results[i].location;
+        output += "</p>";
+        output += "<a href='" + data.results[i].url + "' class='theurl'></a>";
+        output += "</div>";
+      }
+    }
+    group_news.html(output);
+  });
+
+
   // only show splash once
   if (Cookies.get('splash')) {
     $("#header").hide();
@@ -8,6 +36,7 @@ $(function() {
     Cookies.set('splash', 'true', { expires: 30 });
   }
 
+  // toggle new site form
   $("#click_submit_local").on("click", function(event) {
     $("#submit_local").slideToggle("slow");
   });
@@ -67,7 +96,10 @@ $(function() {
     $body = $("body"),
     colW = 375,
     columns = null;
+});
 
+
+$(window).bind("load", function() {
   // external js: isotope.pkgd.js
 
   // init Isotope
@@ -115,10 +147,10 @@ $(function() {
   });
 
   // bind sort button click
-  $("#sorts").on("click", "button", function() {
-    var sortByValue = $(this).attr("data-sort-by");
-    $grid.isotope({ sortBy: sortByValue });
-  });
+  // $("#sorts").on("click", "button", function() {
+  //   var sortByValue = $(this).attr("data-sort-by");
+  //   $grid.isotope({ sortBy: sortByValue });
+  // });
 
   // change is-checked class on buttons
   $(".button-group").each(function(i, buttonGroup) {
@@ -137,50 +169,5 @@ $(function() {
       .attr("href");
     window.open(url, "hrc");
     return false;
-  });
-
-  // -- news feed
-  var newsURL = "/news.json?start_date=" + now;
-  console.log(newsURL);
-  var group_news = $("#group-news");
-  console.log(group_news);
-  $.getJSON(newsURL, function(data) {
-    console.log(data);
-    var output = "";
-    var news_count = 0;
-    for (var i in data.results) {
-      console.log("i=" + i);
-      if (moment(data.results[i].date).diff(now, "days") >= 0) {
-        news_count++;
-        // output += "<div class='news news-content'>";
-        // output += "<div class='news-body text-left'>";
-        // output += "<h4 class='news-heading text-left'>" + data.results[i].title + "</h4>";
-        // output += "<a href='" + data.results[i].url + "' target='hrc'>";
-        // output += "<div class='news-item'>";
-        // output += "<i class='far fa-clock' aria-hidden='true'></i> " + moment(data.results[i].date).format("dddd, MMMM DD, YYYY") + " &#8226; " + data.results[i].time + "</div>";
-        // output += "<div class='news-item'>";
-        // output += "<i class='fas fa-map-marker-alt' aria-hidden='true'></i> " + data.results[i].location + "</div>";
-        // output += "</a>";
-        // output += "</div>";
-        // output += "</div>";
-        output += "<div class='local-content element-item 10k'>";
-        output += "<h4>" + data.results[i].title + "</h4>";
-        output += "<p class='thedate'>";
-        output +=
-          "<i class='far fa-clock' aria-hidden='true'></i> " +
-          moment(data.results[i].date).format("dddd, MMMM DD, YYYY") +
-          " &#8226; " +
-          data.results[i].time;
-        output += "</p>";
-        output += "<p class='thelocation'>";
-        output +=
-          "<i class='far fa-map' aria-hidden='true'></i>" +
-          data.results[i].location;
-        output += "</p>";
-        output += "</div>";
-      }
-    }
-    console.log(output);
-    group_news.html(output);
   });
 });
