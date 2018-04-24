@@ -1,8 +1,11 @@
 $(function() {
+  // -- Get the current date
   var now = moment().format("YYYY-MM-DD");
 
 
-  // -- local races feed
+  /**
+   *  -- local races feed
+   */
   var newsURL = "news.json?start_date=" + now;
 
   var group_news = $(".grid");
@@ -29,15 +32,19 @@ $(function() {
   });
 
 
-  // only show splash once
+  /**
+   *  only show splash once
+   */
   if (Cookies.get('splash')) {
     $("#header").hide();
   } else {
     Cookies.set('splash', 'true', { expires: 30 });
   }
 
-  // toggle new site form
-  $("#click_submit_local").on("click", function(event) {
+  /**
+   *  toggle new site form
+   */
+  $("#click_submit_local").on("click", function(e) {
     $("#submit_local").slideToggle("slow");
   });
 
@@ -60,7 +67,7 @@ $(function() {
   });
 
   /**
-   * Animation
+   * Start WOW Animation
    */
   wow = new WOW({
     animateClass: "animated",
@@ -99,6 +106,12 @@ $(function() {
 });
 
 
+
+
+
+/**
+ * JavaScript after page is loaded
+ */
 $(window).bind("load", function() {
   // external js: isotope.pkgd.js
 
@@ -161,7 +174,10 @@ $(window).bind("load", function() {
     });
   });
 
-  // -- make series into button
+  
+  /**
+   * make series into button
+   */
   $(".local-content").on("click", function() {
     //window.location = $(this).find("a").attr("href");
     var url = $(this)
