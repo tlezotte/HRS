@@ -1,20 +1,36 @@
 {
   "results": [
     {
-      "title": "Wicked Wine Run",
-      "date": "2018-04-21",
-      "time": "5:00pm",
-      "location": "Hendersonville, TN",
-      "url": "http://wickedwinerun.com/locations/tennessee-nashville/",
+      "title": "Strawberry Stride",
+      "date": "2018-05-12",
+      "time": "8:00am",
+      "location": "Portland High School",
+      "url": "",
+      "tags": "5k"
+    },
+    {
+      "title": "Memorial Day Classic",
+      "date": "2018-05-28",
+      "time": "7:00am",
+      "location": "Drakes Creek Park",
+      "url": "http://thememorialdayclassic.com/",
+      "tags": "1m 5k 15k"
+    },
+    {
+      "title": "Sumner Academy",
+      "date": "2018-09-15",
+      "time": "8:30am",
+      "location": "Gallatin Civic Center",
+      "url": "http://www.sumneracademy.org/pto5k",
       "tags": "1m 5k"
     },
     {
-      "title": "Run, Run, Run",
-      "date": "2018-05-21",
-      "time": "5:00pm",
-      "location": "Nashville, TN",
-      "url": "http://wickedwinerun.com/locations/tennessee-nashville/",
-      "tags": "1m 10k"
+      "title": "Hendersonville Half",
+      "date": "2018-09-22",
+      "time": "7:00am",
+      "location": "Streets of Indian Lake",
+      "url": "http://hendersonvillehalf.com/",
+      "tags": "half"
     }
   ]
 }
