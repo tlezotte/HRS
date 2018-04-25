@@ -324,41 +324,50 @@
 		</div>
 		<h6 id="click_submit_local">Want your race listed here.
 			<i class="far fa-hand-point-up"></i> Click here to submit the details.</h6>
-		<div class="col-md-6 col-md-offset-3" id="submit_local" style="display: none;">
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-h_w_70XFD6_uQs5Bz8iP_8Ct8-UrMsTS-jjCK24B2PWB4w/viewform?embedded=true"
-			 width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" id="request_form">Loading...</iframe>
-			<!-- <div class="form">
-				<div id="sendmessage">Your message has been sent. Thank you!</div>
-				<div id="errormessage"></div>
-				<form action="mailto:tom@lezotte.net" method="post" enctype="text/plain" role="form" class="contactForm">
+		<div class="col-md-4 col-md-offset-4">
+			<div id="sentrequest" class="alert alert-success" role="alert">Your Race Request has been sent. Thank you!</div>
+		</div>
+		<div class="col-md-4 col-md-offset-4" id="submit_local" style="display: none;">
+			<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-h_w_70XFD6_uQs5Bz8iP_8Ct8-UrMsTS-jjCK24B2PWB4w/viewform?embedded=true"
+			 width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" id="request_form">Loading...</iframe> -->
+			<div class="form">
+				<form role="form" id="requestForm" class="contactForm">
 					<div class="form-group">
-						<input type="text" class="form-control input-text" name="name" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
+						<input type="text" class="form-control input-text" name="name" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
+						 required />
 						<div class="validation"></div>
 					</div>
 					<div class="form-group">
-						<input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
+						<input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"
+						 required />
 						<div class="validation"></div>
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control input-text" name="title" id="title" placeholder="Race Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
+						<input type="text" class="form-control input-text" name="title" id="title" placeholder="Race Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
+						 required />
 						<div class="validation"></div>
 					</div>
 					<div class="form-group">
-						<input type="date" class="form-control input-text" name="date" id="date" placeholder="Race Date" data-rule="minlen:4" data-rule="date" data-msg="Please the date of the race" />
+						<input type="date" class="form-control input-text" name="date" id="date" placeholder="Race Date" data-rule="minlen:4" data-rule="date"
+						 data-msg="Please the date of the race" />
 						<div class="validation"></div>
 					</div>
 					<div class="form-group">
-						<input type="time" class="form-control input-text" name="time" id="time" placeholder="Race Time" data-rule="minlen:4" data-rule="time" data-msg="Please the time of the race" />
+						<input type="time" class="form-control input-text" name="time" id="time" placeholder="Race Time" data-rule="minlen:4" data-rule="time"
+						 data-msg="Please the time of the race" />
 						<div class="validation"></div>
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control input-text" name="url" id="url" placeholder="Race URL" data-rule="minlen:4" data-rule="text" data-msg="Please enter at least 8 chars of subject" required />
+						<input type="text" class="form-control input-text" name="url" id="url" placeholder="Race URL" data-rule="minlen:4" data-rule="text"
+						 data-msg="Please enter at least 8 chars of subject" required />
 						<div class="validation"></div>
 					</div>
 
-					<div class="text-left"><button type="submit" class="input-btn link">Send Message</button></div>
+					<div class="text-left">
+						<button type="submit" class="input-btn link">Send Message</button>
+					</div>
 				</form>
-			</div> -->
+			</div>
 		</div>
 	</section>
 
@@ -559,6 +568,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
 	<script src="js/custom.js"></script>
 
 
