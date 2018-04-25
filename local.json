@@ -1,11 +1,36 @@
 {
   "results": [
     {
-      "title": "",
-      "date": "2018-04-15",
-      "time": "12:00pm",
-      "location": "",
-      "url": ""
+      "title": "Strawberry Stride",
+      "date": "2018-05-12",
+      "time": "8:00am",
+      "location": "Portland High School",
+      "url": "",
+      "tags": "5k"
+    },
+    {
+      "title": "Memorial Day Classic",
+      "date": "2018-05-28",
+      "time": "7:00am",
+      "location": "Drakes Creek Park",
+      "url": "http://thememorialdayclassic.com/",
+      "tags": "1m 5k 15k"
+    },
+    {
+      "title": "Sumner Academy",
+      "date": "2018-09-15",
+      "time": "8:30am",
+      "location": "Gallatin Civic Center",
+      "url": "http://www.sumneracademy.org/pto5k",
+      "tags": "1m 5k"
+    },
+    {
+      "title": "Hendersonville Half",
+      "date": "2018-09-22",
+      "time": "7:00am",
+      "location": "Streets of Indian Lake",
+      "url": "http://hendersonvillehalf.com/",
+      "tags": "half"
     }
   ]
 }

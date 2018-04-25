@@ -6,11 +6,11 @@ $(function() {
   /**
    *  -- local races feed
    */
-  var newsURL = "news.json?start_date=" + now;
+  var localURL = "local.json?start_date=" + now;
 
-  var group_news = $(".grid");
+  var local_races = $(".grid");
 
-  $.getJSON(newsURL, function(data) {
+  $.getJSON(localURL, function(data) {
 
     var output = "";
     for (var i in data.results) {
@@ -28,7 +28,7 @@ $(function() {
         output += "</div>";
       }
     }
-    group_news.html(output);
+    local_races.html(output);
   });
 
 
