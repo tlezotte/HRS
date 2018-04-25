@@ -44,9 +44,9 @@ $(function() {
   /**
    *  toggle new site form
    */
-  $("#click_submit_local").on("click", function(e) {
-    $("#submit_local").slideToggle("slow");
-  });
+  // $("#click_submit_local").on("click", function(e) {
+  //   $("#submit_local").slideToggle("slow");
+  // });
 
   // Since there's no list-group/tab integration in Bootstrap
   $(".list-group-item").on("click", function(e) {
@@ -142,7 +142,9 @@ $(function() {
     // clean form data
     this.reset();
     // hide form after submit
-    $("#submit_local").slideToggle();
+    //$("#submit_local").slideToggle();
+    // lightbox.close();
+    $(".lity-inline").addClass("lity-hide");
 
     // show alert and fade in 3 seconds
     $("#sentrequest").show();
