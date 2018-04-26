@@ -134,7 +134,7 @@ $(function() {
     var url = $("#url").val();
 
     // save request
-    saveRequest(name,email,title,date,time,url);
+    saveRequest(now,name,email,title,date,time,url);
 
     // send to slack
     sendToSlack(name,email,title,date,time,url);
@@ -143,8 +143,7 @@ $(function() {
     this.reset();
     // hide form after submit
     //$("#submit_local").slideToggle();
-    // lightbox.close();
-    $(".lity-inline").addClass("lity-hide");
+    $('.lity-opened').hide();
 
     // show alert and fade in 3 seconds
     $("#sentrequest").show();
@@ -154,10 +153,11 @@ $(function() {
   });
 
   // Save Request
-  function saveRequest(name,email,title,date,time,url) {
+  function saveRequest(now,name,email,title,date,time,url) {
     var newRequest = requestRef.push();
 
     newRequest.set({
+      requested: now,
       name: name,
       email: email,
       title: title,
