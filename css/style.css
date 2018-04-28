@@ -980,3 +980,23 @@ img {
     margin: 0 auto !important;
   }
 }
+
+.panel-group {
+  padding-top: 50px;
+}
+.panel-title {
+  padding: 1em;
+}
+.panel-body {
+  padding: 2.5em;
+}
+#faq {
+  height:800px;
+}
+#local {
+  height:700px;
+  display: none;
+}
+#contact {
+  background: #d4d4d4;
+}

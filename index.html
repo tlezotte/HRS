@@ -102,9 +102,9 @@
 				<li>
 					<a href="#gifts">The Gifts</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="#local">Local Races</a>
-				</li>
+				</li> -->
 				<li>
 					<a href="#faq">FAQ</a>
 				</li>
@@ -294,14 +294,14 @@
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4 text-center  wow fadeIn delay-02s">
-				<a href="https://register.chronotrack.com/r/38886" target="hrs" class="link animated fadeInUp delay-1s servicelink">Register Today</a>
+				<a href="https://register.chronotrack.com/r/38886" target="hrs" class="animated fadeInUp delay-1s servicelink"><img src="img/athlink_register.png" height="75" alt="athlink"></a>
 			</div>
 		</div>
 	</section>
 	<!-- /Section: gifts -->
 
 	<!-- Section: local -->
-	<section class="main-section alabaster" id="local" style="height:600px">
+	<section class="main-section alabaster" id="local">
 		<h2>Local Races</h2>
 		<h6>Races in Sumner County and the surrounding area</h6>
 		<div class="row">
@@ -327,194 +327,176 @@
 				<div class="grid"></div>
 			</div>
 		</div>
-		<h6 id="click_submit_local"><a href="#requestForm" data-lity>Want your race listed?
-			<i class="far fa-hand-point-up"></i> Click here to submit the details.</h6>
+		<h6 id="click_submit_local">
+			<a href="#requestForm" data-lity>Want your race listed?
+				<i class="far fa-hand-point-up"></i> Click here to submit the details.</h6>
 		<div class="col-md-4 col-md-offset-4">
-			<div id="sentrequest" class="alert alert-success" role="alert">Your Race Request has been sent. Thank you!</a></div>
+			<div id="sentrequest" class="alert alert-success" role="alert">Your Race Request has been sent. Thank you!</a>
+			</div>
 		</div>
 		<!-- <div class="col-md-6 col-md-offset-3" id="submit_local"> -->
-			<!-- <div class="form"> -->
-				<form role="form" id="requestForm" class="contactForm lity-hide">
-					<div class="form-group">
-						<label class="control-label" for="name">Your Name</label>
-						<input type="text" class="form-control input-lg" name="name" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
-						 required />
-						<div class="validation"></div>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="email">Your Email</label>
-						<input type="email" class="form-control input-lg" name="email" id="email" data-rule="email" data-msg="Please enter a valid email"
-						 required />
-						<div class="validation"></div>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="title">Race Title</label>
-						<input type="text" class="form-control input-lg" name="title" id="title" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
-						 required />
-						<div class="validation"></div>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="date">Race Date</label>
-						<input type="date" class="form-control input-lg" name="date" id="date" data-rule="minlen:4" data-rule="date" data-msg="Please the date of the race" />
-						<div class="validation"></div>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="time">Race Time</label>
-						<input type="time" class="form-control input-lg" name="time" id="time" data-rule="minlen:4" data-rule="time" data-msg="Please the time of the race" />
-						<div class="validation"></div>
-					</div>
-					<div class="form-group">
-						<label class="control-label" for="url">Race URL</label>
-						<input type="text" class="form-control input-lg" name="url" id="url" data-rule="minlen:4" data-rule="text" data-msg="Please enter at least 8 chars of subject" required />
-						<div class="validation"></div>
-					</div>
+		<!-- <div class="form"> -->
+		<form role="form" id="requestForm" class="contactForm lity-hide">
+			<div class="form-group">
+				<label class="control-label" for="name">Your Name</label>
+				<input type="text" class="form-control input-lg" name="name" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
+				 required />
+				<div class="validation"></div>
+			</div>
+			<div class="form-group">
+				<label class="control-label" for="email">Your Email</label>
+				<input type="email" class="form-control input-lg" name="email" id="email" data-rule="email" data-msg="Please enter a valid email"
+				 required />
+				<div class="validation"></div>
+			</div>
+			<div class="form-group">
+				<label class="control-label" for="title">Race Title</label>
+				<input type="text" class="form-control input-lg" name="title" id="title" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
+				 required />
+				<div class="validation"></div>
+			</div>
+			<div class="form-group">
+				<label class="control-label" for="date">Race Date</label>
+				<input type="date" class="form-control input-lg" name="date" id="date" data-rule="minlen:4" data-rule="date" data-msg="Please the date of the race"
+				/>
+				<div class="validation"></div>
+			</div>
+			<div class="form-group">
+				<label class="control-label" for="time">Race Time</label>
+				<input type="time" class="form-control input-lg" name="time" id="time" data-rule="minlen:4" data-rule="time" data-msg="Please the time of the race"
+				/>
+				<div class="validation"></div>
+			</div>
+			<div class="form-group">
+				<label class="control-label" for="url">Race URL</label>
+				<input type="text" class="form-control input-lg" name="url" id="url" data-rule="minlen:4" data-rule="text" data-msg="Please enter at least 8 chars of subject"
+				 required />
+				<div class="validation"></div>
+			</div>
 
-					<div class="text-left">
-						<button type="submit" class="input-btn link">Send Request</button>
-					</div>
-				</form>
-			<!-- </div> -->
+			<div class="text-left">
+				<button type="submit" class="input-btn link">Send Request</button>
+			</div>
+		</form>
+		<!-- </div> -->
 		<!-- </div> -->
 	</section>
 
 	<!-- Section: faq -->
-	<section class="questions" id="faq">
-		<div class="container col-md-12">
+	<section class="main-section alabaster" id="faq">
+		<div class="col-md-8 col-md-offset-2">
 			<h2>FAQ</h2>
 			<h6>Here are some Frequently Asked Questions</h6>
-		</div>
-	</section>
 
-	<div class="container">
-		<section class="main-section contact" id="contact">
-			<div class="container">
-				<div class="col-md-4">
-					<ul class="list-group help-group">
-						<div class="faq-list list-group nav nav-tabs">
-							<a href="#tab1" class="list-group-item active" role="tab" data-toggle="tab"> Category 1</a>
-							<a href="#tab2" class="list-group-item" role="tab" data-toggle="tab">
-								<i class="mdi mdi-account"></i> Category 2</a>
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingOne">
+						<h4 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								What is the HRS?
+							</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+						<div class="panel-body">
+							For promotional purposes, we have grouped Hendersonville's four largest races.
 						</div>
-					</ul>
+					</div>
 				</div>
-				<div class="col-md-8">
-					<div class="tab-content panels-faq">
-						<div class="tab-pane active" id="tab1">
-							<div class="panel-group" id="help-accordion-1">
-								<div class="panel panel-default panel-help">
-									<a href="#opret-produkt" data-toggle="collapse" data-parent="#help-accordion-1">
-										<div class="panel-heading">
-											<h2>How do I edit my profile?</h2>
-										</div>
-									</a>
-									<div id="opret-produkt" class="collapse">
-										<div class="panel-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam
-												minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam
-												est!
-											</p>
-											<p>
-												<strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default panel-help">
-									<a href="#rediger-produkt" data-toggle="collapse" data-parent="#help-accordion-1">
-										<div class="panel-heading">
-											<h2>How do I upload a new profile picture?</h2>
-										</div>
-									</a>
-									<div id="rediger-produkt" class="collapse">
-										<div class="panel-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam
-												minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam
-												est!
-											</p>
-											<p>
-												<strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default panel-help">
-									<a href="#ret-pris" data-toggle="collapse" data-parent="#help-accordion-1">
-										<div class="panel-heading">
-											<h2>Can I change my phone number?</h2>
-										</div>
-									</a>
-									<div id="ret-pris" class="collapse">
-										<div class="panel-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam
-												minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam
-												est!
-											</p>
-											<p>
-												<strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default panel-help">
-									<a href="#slet-produkt" data-toggle="collapse" data-parent="#help-accordion-1">
-										<div class="panel-heading">
-											<h2>Where do I change my privacy settings?</h2>
-										</div>
-									</a>
-									<div id="slet-produkt" class="collapse">
-										<div class="panel-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam
-												minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam
-												est!
-											</p>
-											<p>
-												<strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default panel-help">
-									<a href="#opret-kampagne" data-toggle="collapse" data-parent="#help-accordion-1">
-										<div class="panel-heading">
-											<h2>What is this?</h2>
-										</div>
-									</a>
-									<div id="opret-kampagne" class="collapse">
-										<div class="panel-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam
-												minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam
-												est!
-											</p>
-											<p>
-												<strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-										</div>
-									</div>
-								</div>
-							</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingTwo">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+							 aria-controls="collapseTwo">
+								Which races are included in the HRS?
+							</a>
+						</h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div class="panel-body">
+							The Memorial Day Classic, the Hendersonville Half Marathon, the Indian Lake Loop and the Frostbite 5K/10K.
 						</div>
-						<div class="tab-pane" id="tab2">
-							<div class="panel-group" id="help-accordion-2">
-								<div class="panel panel-default panel-help">
-									<a href="#help-three" data-toggle="collapse" data-parent="#help-accordion-2">
-										<div class="panel-heading">
-											<h2>Lorem ipsum?</h2>
-										</div>
-									</a>
-									<div id="help-three" class="collapse in">
-										<div class="panel-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt ut officiis accusantium quisquam
-												minima praesentium, beatae fugit illo nobis fugiat adipisci quia distinctio repellat culpa saepe, optio aperiam
-												est!
-											</p>
-											<p>
-												<strong>Example: </strong>Facere, id excepturi iusto aliquid beatae delectus nemo enim, ad saepe nam et.</p>
-										</div>
-									</div>
-								</div>
-							</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingThree">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+							 aria-controls="collapseThree">
+								How can I add my race to the series?
+							</a>
+						</h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						<div class="panel-body">
+							At the moment we are not taking any additional races, but we expect that in the future we will make an announcement as to
+							how your race may be added. Please refer back to this website for information.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingFour">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false"
+							 aria-controls="collapseFour">
+								Do I have to register for the HRS?
+							</a>
+						</h4>
+					</div>
+					<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+						<div class="panel-body">
+							Yes. A minimal fee of $10 is required to be eligible to receive the gift. Please follow this link to do so: <a href="https://register.chronotrack.com/r/38886/" target="hrs"><img src="img/athlink_register.png" height="25" alt="athlink"></a>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingFive">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+							 aria-controls="collapseFive">
+								Is registering for the HRS the same thing as registering for the races?
+							</a>
+						</h4>
+					</div>
+					<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+						<div class="panel-body">
+							NO. You still have to register for each individual race. To do so, please visit their website or registration page.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingSix">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false"
+							 aria-controls="collapseSix">
+								Can I purchase a tee shirt or a hoodie if I don't run the number of races required to receive either as a gift?
+							</a>
+						</h4>
+					</div>
+					<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+						<div class="panel-body">
+							NO. The tee shirt and hoodie are only for those who finish the required number of races.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingSeven">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false"
+							 aria-controls="collapseSeven">
+							 When may we expect our gifts?
+							</a>
+						</h4>
+					</div>
+					<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+						<div class="panel-body">
+							The gifts will be available about two to three weeks after the last race of the year.
 						</div>
 					</div>
 				</div>
 			</div>
-
-		</section>
-	</div>
+		</div>
+	</section>
 	<!-- /Section: faq -->
 
 	<!-- Section: contact -->
