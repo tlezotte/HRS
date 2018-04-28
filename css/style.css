@@ -258,17 +258,17 @@ img {
 .main-section.contact {
   background: url(../img/bg-map.png) left 190px no-repeat;
 }
-.social-link {
+.contact-links {
   padding: 35px 0;
   overflow: hidden;
   list-style: none;
   display: inline-block;
 }
-.social-link li {
+.contact-links li {
   float: left;
   margin-right: 8px;
 }
-.social-link li a {
+.contact-links li a {
   display: block;
   width: 50px;
   height: 50px;
@@ -280,8 +280,8 @@ img {
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
-.social-link li a:hover,
-.social-link li a:focus {
+.contact-links li a:hover,
+.contact-links li a:focus {
   text-decoration: none;
 }
 .facebook a:hover {
@@ -789,7 +789,7 @@ img {
   .contact-info-box {
     margin: 0;
   }
-  .social-link {
+  .contact-links {
     margin: 0;
   }
 
@@ -907,7 +907,7 @@ img {
   .contact-info-box.email span {
     padding-top: 6px;
   }
-  .social-link {
+  .contact-links {
     margin-left: 30px;
   }
   .form {
@@ -932,7 +932,7 @@ img {
     padding: 10px 25px;
   }
   .logo {
-    width: 100px;
+    width: 75%;
   }
   .main-section.contact {
     background-size: contain;
@@ -958,7 +958,7 @@ img {
   .header {
     padding: 40px;
   }
-  .social-link {
+  .contact-links {
     margin-left: 0px;
   }
   .form {
