@@ -986,12 +986,14 @@ img {
 }
 .panel-title {
   padding: 1em;
+  font-size: 1.2em;
 }
 .panel-body {
   padding: 2.5em;
+  font-size: 1.1em;
 }
 #faq {
-  height:800px;
+  height:1000px;
 }
 #local {
   height:700px;
