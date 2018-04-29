@@ -174,10 +174,10 @@ p {
   font-size: 14px;
   margin-bottom: 40px;
 }
-.service-list-col1 {
+/* .service-list-col1 {
   float: left;
   width: 60px;
-}
+} */
 .service-list-col1 i {
   font-style: normal;
   font-size: 38px;
