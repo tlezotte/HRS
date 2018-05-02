@@ -1002,3 +1002,8 @@ img {
 #contact {
   background: #d4d4d4;
 }
+
+#support a {
+  color: rgb(216, 213, 213);
+  text-decoration: none;
+}
