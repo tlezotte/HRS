@@ -33,6 +33,76 @@ $(function() {
 
 
   /**
+   *  -- series races feed
+   */
+  var seriesURL = "race_series.json?start_date=" + now;
+
+  /**
+   *  -- race alerts --
+   */
+  var race_series = $("#race-series");
+
+  $.getJSON(seriesURL, function(data) {
+
+    var output = "";
+    for (var i in data.results) {
+      output += "<li class='series-item' data-wow-delay='0.6s'>";
+      output += "<div class='series-content'>";
+      output += "<h5>" + data.results[i].title + "</h5>";
+      output += "<p>";
+      output += "<a href='" + data.results[i].url + "' target='hrs'>";
+      output += "<img src='img/" + data.results[i].logo + "' width='150' alt='" + data.results[i].title + "' />";
+      output += "</a>";
+      output += "</p>";
+      output += "<h6>" + data.results[i].date + " &#8226; " + data.results[i].time + "</h6>";
+      output += "</div>";
+      output += "</li>";
+    }
+    race_series.html(output);
+  });
+
+  /**
+   *  -- race alerts --
+   */
+  var race_alert = $("#race-alert");
+
+  $.getJSON(seriesURL, function(data) {
+
+    var output = "";
+    var alert_level = "";
+    for (var i in data.results) {
+      var days_to_race = moment(data.results[i].date).diff(now, "days");
+      if (days_to_race >= 0 && days_to_race <= 14) {
+        alert_level = ( days_to_race <= 7 ) ? "alert-danger" : "alert-warning";
+        output += "<div class='alert-content " + alert_level + " text-center " + data.results[i].tags + "'>";
+        // output += "<div class='alert alert-warning' role='alert'>";
+        output += "<div class='col-md-4 alert-left'>";
+        output += "<h5>Registration Alert</h5>";
+        output += "<div>" + days_to_race + " days till race</div>";
+        output += "</div>";
+        output += "<div class='col-md-4'>";
+        output += "<h4><a href='" + data.results[i].url + "' target='hrs'>" + data.results[i].title + "</a></h4>";
+        output += "<div class=''>";
+        output += "<i class='far fa-clock' aria-hidden='true'></i> " + moment(data.results[i].date).format("dddd MMMM DD, YYYY");
+        output += " &#8226; " + data.results[i].time;
+        output += "</div>";
+        output += "<div class=''>";
+        output += "<i class='fas fa-map-marker-alt' aria-hidden='true'></i> " + data.results[i].location;
+        output += "</div>";
+        output += "</div>";
+        output += "<div class='col-md-4 text-center'>";
+        output += "<a href='" + data.results[i].register + "' target='hrs'>";
+        output += "<img src='img/athlink_register.png' height='35' alt='athlink'>";
+        output += "</a>";
+        output += "</div>";
+        output += "</div>";
+      }
+    }
+    race_alert.html(output);
+  });
+
+
+  /**
    *  only show splash once
    */
   if (Cookies.get('splash')) {

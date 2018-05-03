@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "title": "Memorial Day Classic",
+      "date": "2018-05-28",
+      "time": "7:00am",
+      "location": "Drakes Creek Park",
+      "url": "http://thememorialdayclassic.com/",
+      "register": "https://register.chronotrack.com/r/36309",
+      "logo": "Memorial-Day-Classic.png",
+      "tags": "5k 15k"
+    },
+    {
+      "title": "Hendersonville Half",
+      "date": "2018-09-22",
+      "time": "7:00am",
+      "location": "Fleet Feet in the Streets of Indian Lake",
+      "url": "http://hendersonvillehalf.com/",
+      "register": "https://register.chronotrack.com/r/33829",
+      "logo": "Hendersonville-Half.png",
+      "tags": "half"
+    },
+    {
+      "title": "Indian Lake Loop",
+      "date": "2018-11-22",
+      "time": "8:00am",
+      "location": "Regal Streets Of Indian Lake",
+      "url": "http://indianlakeloop.com/",
+      "register": "",
+      "logo": "Indian-Lake-Loop.png",
+      "tags": "5k 5m"
+    },
+    {
+      "title": "Frostbite",
+      "date": "2018-12-29",
+      "time": "8:00am",
+      "location": "",
+      "url": "",
+      "register": "",
+      "logo": "Frostbite.png",
+      "tags": "5k"
+    }
+  ]
+}
