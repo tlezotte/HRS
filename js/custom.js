@@ -54,7 +54,7 @@ $(function() {
       output += "<img src='img/" + data.results[i].logo + "' width='150' alt='" + data.results[i].title + "' />";
       output += "</a>";
       output += "</p>";
-      output += "<h6>" + data.results[i].date + " &#8226; " + data.results[i].time + "</h6>";
+      output += "<h6>" + moment(data.results[i].date).format("MMMM DD, YYYY") + " &#8226; " + data.results[i].time + "</h6>";
       output += "</div>";
       output += "</li>";
     }
@@ -329,7 +329,7 @@ $(window).bind("load", function() {
   /**
    * make series into button
    */
-  $(".local-content").on("click", function() {
+  $(".local-content, #race-series").on("click", function() {
     //window.location = $(this).find("a").attr("href");
     var url = $(this)
       .find("a")
