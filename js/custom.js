@@ -329,7 +329,7 @@ $(window).bind("load", function() {
   /**
    * make series into button
    */
-  $(".local-content, #race-series").on("click", function() {
+  $(".local-content, .series-content").on("click", function() {
     //window.location = $(this).find("a").attr("href");
     var url = $(this)
       .find("a")
