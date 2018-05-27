@@ -72,13 +72,31 @@ $(function() {
     var alert_level = "";
     for (var i in data.results) {
       var days_to_race = moment(data.results[i].date).diff(now, "days");
-      if (days_to_race >= 0 && days_to_race <= 14) {
-        alert_level = ( days_to_race <= 7 ) ? "alert-danger" : "alert-warning";
+      if (days_to_race >= -2 && days_to_race <= 14) {
+        if (days_to_race <= 14 && days_to_race >= 8) {
+          alert_level="alert-warning";
+          alert_image="athlink_register";
+          alert_message="Registration Alert";
+          alert_message2=days_to_race + " days till race";
+          alert_link=data.results[i].register;
+        } else if (days_to_race <= 7 && days_to_race >= 1) {
+          alert_level="alert-danger";
+          alert_image="athlink_register";
+          alert_message="Registration Alert";
+          alert_message2=days_to_race + " days till race";
+          alert_link=data.results[i].register;
+        } else if (days_to_race <= 0) {
+          alert_level="alert-success";
+          alert_image="athlink_results";
+          alert_message="Did you Run?";
+          alert_message2="";
+          alert_link=data.results[i].results;
+        }
         output += "<div class='alert-content " + alert_level + " text-center " + data.results[i].tags + "'>";
         // output += "<div class='alert alert-warning' role='alert'>";
         output += "<div class='col-md-4 alert-left'>";
-        output += "<h5>Registration Alert</h5>";
-        output += "<div>" + days_to_race + " days till race</div>";
+        output += "<h5>" + alert_message + "</h5>";
+        output += "<div>" + alert_message2 + "</div>";
         output += "</div>";
         output += "<div class='col-md-4'>";
         output += "<h4><a href='" + data.results[i].url + "' target='hrs'>" + data.results[i].title + "</a></h4>";
@@ -91,8 +109,8 @@ $(function() {
         output += "</div>";
         output += "</div>";
         output += "<div class='col-md-4 text-center'>";
-        output += "<a href='" + data.results[i].register + "' target='hrs'>";
-        output += "<img src='img/athlink_register.png' height='35' alt='athlink'>";
+        output += "<a href='" + alert_link + "' target='hrs'>";
+        output += "<img src='img/" + alert_image + ".png' height='35' alt='athlink'>";
         output += "</a>";
         output += "</div>";
         output += "</div>";
