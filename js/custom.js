@@ -41,10 +41,12 @@ $(function() {
    *  -- race alerts --
    */
   var race_series = $("#race-series");
+  var race_results = $("#race-results");
 
   $.getJSON(seriesURL, function(data) {
 
     var output = "";
+    var output2 = "";
     for (var i in data.results) {
       output += "<li class='series-item' data-wow-delay='0.6s'>";
       output += "<div class='series-content'>";
@@ -57,30 +59,22 @@ $(function() {
       output += "<h6>" + moment(data.results[i].date).format("MMMM DD, YYYY") + " &#8226; " + data.results[i].time + "</h6>";
       output += "</div>";
       output += "</li>";
-    }
-    race_series.html(output);
-  });
 
-  /**
-   *  -- race alerts --
-   */
-  var race_results = $("#race-results");
-
-  $.getJSON(seriesURL, function(data) {
-
-    var output = "";
-    for (var i in data.results) {
+      /** 
+       * -- display results
+       */
       if (data.results[i].results) {
-        output += "<div class='series-content'>";
-        output += "<h6>" + data.results[i].results + "</h6>";
-        output += "</div>";
+        output2 += "<div class='series-item'>";
+        output2 += "<h6><a href='" + data.results[i].results + "' target='hrs'>Results</a></h6>";
+        output2 += "</div>";
       } else {
-        output += "<div>";
-        output += "<h6>&nbsp;</h6>";
-        output += "</div>";
+        output2 += "<div class='series-item'>";
+        output2 += "<h6>&nbsp;</h6>";
+        output2 += "</div>";
       }
     }
-    race_results.html(output);
+    race_series.html(output);
+    race_results.html(output2);
   });
 
   /**
