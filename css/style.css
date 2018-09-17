@@ -386,12 +386,14 @@ img {
   width: 100%;
 }
 @media all and (min-width: 40em) {
-  .series-item {
+  .series-item,
+  .results-item {
     width: 50%;
   }
 }
 @media all and (min-width: 60em) {
-  .series-item {
+  .series-item,
+  .results-item {
     width: 25%;
   }
 }
@@ -407,7 +409,8 @@ img {
 
 .c-logo-part h5,
 .series-content h5,
-.series-content h6 {
+.series-content h6,
+.results-content h6 {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
@@ -447,6 +450,7 @@ img {
   width: 100%;
   cursor: pointer;
 }
+.results-content h6,
 .results-content-none h6 {
   margin: 0 !important;
 }
