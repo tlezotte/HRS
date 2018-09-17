@@ -448,7 +448,6 @@ img {
   flex-direction: column;
   padding: 1em;
   width: 100%;
-  cursor: pointer;
 }
 .results-content h6,
 .results-content-none h6 {
