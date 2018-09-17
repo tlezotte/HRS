@@ -454,6 +454,11 @@ img {
 .results-content-none h6 {
   margin: 0 !important;
 }
+.results-content h6 a,
+.results-content h6 a:hover {
+  text-decoration: none;
+  color: #888888;
+}
 
 /* local runs */
 
