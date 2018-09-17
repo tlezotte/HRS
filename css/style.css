@@ -410,6 +410,10 @@ img {
   width: 100%;
   cursor: pointer;
 }
+.series-content-none h6 {
+  margin: 0 !important;
+}
+
 .c-logo-part h5,
 .series-content h5,
 .series-content h6 {
