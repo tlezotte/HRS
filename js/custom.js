@@ -64,13 +64,17 @@ $(function() {
        * -- display results
        */
       if (data.results[i].results) {
-        output2 += "<div class='series-item'>";
+        output2 += "<li class='series-item' data-wow-delay='0.6s'>";
+        output2 += "<div class='series-content'>";
         output2 += "<h6><a href='" + data.results[i].results + "' target='hrs'>Results</a></h6>";
         output2 += "</div>";
+        output2 += "</li>";
       } else {
-        output2 += "<div class='series-item'>";
+        output2 += "<li class='series-item' data-wow-delay='0.6s'>";
+        output2 += "<div class='series-content'>";
         output2 += "<h6>&nbsp;</h6>";
         output2 += "</div>";
+        output2 += "</li>";
       }
     }
     race_series.html(output);
