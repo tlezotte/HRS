@@ -458,6 +458,10 @@ img {
   text-decoration: none;
   color: #888888;
 }
+.race-results ul {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
 
 /* local runs */
 
