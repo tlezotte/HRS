@@ -56,14 +56,31 @@ $(function() {
       output += "</p>";
       output += "<h6>" + moment(data.results[i].date).format("MMMM DD, YYYY") + " &#8226; " + data.results[i].time + "</h6>";
       output += "</div>";
-      if (data.results[i].results) {
-      output += "<div class='series-content'>";
-      output += "<h6>" + data.results[i].results + "</h6>";
-      output += "</div>";
-      }
       output += "</li>";
     }
     race_series.html(output);
+  });
+
+  /**
+   *  -- race alerts --
+   */
+  var race_results = $("#race-results");
+
+  $.getJSON(seriesURL, function(data) {
+
+    var output = "";
+    for (var i in data.results) {
+      if (data.results[i].results) {
+        output += "<div class='series-content'>";
+        output += "<h6>" + data.results[i].results + "</h6>";
+        output += "</div>";
+      } else {
+        output += "<div>";
+        output += "<h6>&nbsp;</h6>";
+        output += "</div>";
+      }
+    }
+    race_results.html(output);
   });
 
   /**
