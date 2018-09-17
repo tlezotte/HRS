@@ -56,6 +56,11 @@ $(function() {
       output += "</p>";
       output += "<h6>" + moment(data.results[i].date).format("MMMM DD, YYYY") + " &#8226; " + data.results[i].time + "</h6>";
       output += "</div>";
+      if (data.results[i].results) {
+      output += "<div class='series-content'>";
+      output += "<h6>" + data.results[i].results + "</h6>";
+      output += "</div>";
+      }
       output += "</li>";
     }
     race_series.html(output);
