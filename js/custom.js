@@ -1,6 +1,7 @@
 $(function() {
   // -- Get the current date
   var now = moment().format("YYYY-MM-DD");
+  var year = moment().format("YYYY");
 
 
   /**
@@ -35,7 +36,7 @@ $(function() {
   /**
    *  -- series races feed
    */
-  var seriesURL = "race_series.json?start_date=" + now;
+  var seriesURL = year + "_race_series.json?start_date=" + now;
 
   /**
    *  -- race alerts --
