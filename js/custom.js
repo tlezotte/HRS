@@ -36,7 +36,7 @@ $(function() {
   /**
    *  -- series races feed
    */
-  var seriesURL = year + "_race_series.json?start_date=" + now;
+  var seriesURL = "api/" + year + "_race_series.json?start_date=" + now;
 
   /**
    *  -- race alerts --
