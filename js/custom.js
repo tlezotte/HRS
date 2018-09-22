@@ -1,3 +1,21 @@
+/**
+ * get a url parameter
+ *
+ * @param {String} name URL argument name
+ * @returns {String} URL argument value
+ * @public
+ */
+$.urlParam = function(name){
+  var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+  if (results==null){
+      return null;
+  }
+  else{
+      return decodeURI(results[1]) || 0;
+  }
+}
+
+
 $(function() {
   // -- Get the current date
   var now = moment().format("YYYY-MM-DD");
@@ -294,7 +312,6 @@ $(function() {
     });
   }
 });
-
 
 
 
