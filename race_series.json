@@ -29,18 +29,20 @@
       "location": "Regal Streets Of Indian Lake",
       "url": "http://indianlakeloop.com/",
       "register": "",
+      "results": "",
       "logo": "Indian-Lake-Loop.png",
       "tags": "5k 5m"
     },
     {
       "title": "Frostbite",
       "date": "2018-12-29",
-      "time": "8:00am",
-      "location": "",
-      "url": "",
-      "register": "",
+      "time": "9:00am",
+      "location": "Sumner County YMCA",
+      "url": "http://www.ymcamidtn.org/events/frostbite",
+      "register": "https://endurancecui.active.com/new/events/54183354/select-race?e4p=3a09ef99-9192-4552-b921-e790f4912e02&e4ts=1533048094&e4q=f2f444ad-c5e4-4df1-80cd-3e55c3569cfb&e4c=active&e4e=snawe00000000&e4h=f630eee2aeede9d7a1ed476581ea8f68&PreviewMode=true&e4rt=Safetynet",
+      "results": "",
       "logo": "Frostbite.png",
-      "tags": "5k"
+      "tags": "5k 10k"
     }
   ]
 }
