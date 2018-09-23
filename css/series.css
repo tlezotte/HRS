@@ -5,7 +5,40 @@
     Author URL: http://tom.lezotte.net
 */
 
-/*Flex items*/
+/**
+ * -- race alerts
+ */
+.alert-content {
+  display: flex;
+  flex-direction: row;
+  padding: .5em;
+  width: 100%;
+}
+#race-alert .alert-danger a { 
+  color: #a94442;
+  text-decoration: none;
+}
+#race-alert .alert-warning a { 
+  color: #8a6d3b;
+  text-decoration: none;
+}
+.alert-content div {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.alert-left {
+  text-transform: uppercase;
+}
+#race-alert {
+  margin: -3.5em 0 2em 0;
+  border-radius: 4px;
+}
+
+
+
+/**
+ * -- race series
+ */
 .list {
   display: flex;
   flex-wrap: wrap;
