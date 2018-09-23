@@ -25,7 +25,7 @@ $(function() {
   /**
    *  -- series races feed
    */
-  var seriesURL = "api/" + year + "_race_series.json?start_date=" + now;
+  var seriesURL = "https://www.hendersonvilleraceseries.com/api/" + year + "_race_series.json?start_date=" + now;
 
   /**
    *  -- race alerts --
