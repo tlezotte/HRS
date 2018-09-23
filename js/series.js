@@ -43,7 +43,7 @@ $(function() {
       output += "<h5>" + data.results[i].title + "</h5>";
       output += "<p>";
       output += "<a href='" + data.results[i].url + "' target='hrs'>";
-      output += "<img src='img/" + data.results[i].logo + "' width='150' alt='" + data.results[i].title + "' />";
+      output += "<img src='" + data.results[i].logo + "' width='150' alt='" + data.results[i].title + "' />";
       output += "</a>";
       output += "</p>";
       output += "<h6>" + moment(data.results[i].date).format("MMMM DD, YYYY") + " &#8226; " + data.results[i].time + "</h6>";
@@ -85,19 +85,19 @@ $(function() {
       if (days_to_race >= -2 && days_to_race <= 14) {
         if (days_to_race <= 14 && days_to_race >= 8) {
           alert_level="alert-warning";
-          alert_image="athlink_register";
+          alert_image="https://www.hendersonvilleraceseries.com/img/athlink_register.png";
           alert_message="Registration Alert";
           alert_message2=days_to_race + " days till race";
           alert_link=data.results[i].register;
         } else if (days_to_race <= 7 && days_to_race >= 1) {
           alert_level="alert-danger";
-          alert_image="athlink_register";
+          alert_image="https://www.hendersonvilleraceseries.com/img/athlink_register.png";
           alert_message="Registration Alert";
           alert_message2=days_to_race + " days till race";
           alert_link=data.results[i].register;
         } else if (days_to_race <= 0) {
           alert_level="alert-success";
-          alert_image="athlink_results";
+          alert_image="https://www.hendersonvilleraceseries.com/img/athlink_results.png";
           alert_message="Did you Run?";
           alert_message2="";
           alert_link=data.results[i].results;
@@ -120,7 +120,7 @@ $(function() {
         output += "</div>";
         output += "<div class='col-md-4 text-center'>";
         output += "<a href='" + alert_link + "' target='hrs'>";
-        output += "<img src='img/" + alert_image + ".png' height='35' alt='athlink'>";
+        output += "<img src='" + alert_image + "' height='35' alt='athlink'>";
         output += "</a>";
         output += "</div>";
         output += "</div>";

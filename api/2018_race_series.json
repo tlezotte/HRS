@@ -8,7 +8,7 @@
       "url": "http://thememorialdayclassic.com/",
       "register": "https://register.chronotrack.com/r/36309",
       "results": "https://www.athlinks.com/event/140196/results/Event/699019/Results",
-      "logo": "Memorial-Day-Classic.png",
+      "logo": "https://www.hendersonvilleraceseries.com/img/Memorial-Day-Classic.png",
       "tags": "5k 15k"
     },
     {
@@ -19,7 +19,7 @@
       "url": "http://hendersonvillehalf.com/",
       "register": "https://register.chronotrack.com/r/33829",
       "results": "https://www.athlinks.com/event/180461/results/Event/675106/Results",
-      "logo": "Hendersonville-Half.png",
+      "logo": "https://www.hendersonvilleraceseries.com/img/Hendersonville-Half.png",
       "tags": "half"
     },
     {
@@ -30,7 +30,7 @@
       "url": "http://indianlakeloop.com/",
       "register": "",
       "results": "",
-      "logo": "Indian-Lake-Loop.png",
+      "logo": "https://www.hendersonvilleraceseries.com/img/Indian-Lake-Loop.png",
       "tags": "5k 5m"
     },
     {
@@ -41,7 +41,7 @@
       "url": "http://www.ymcamidtn.org/events/frostbite",
       "register": "https://endurancecui.active.com/new/events/54183354/select-race?e4p=3a09ef99-9192-4552-b921-e790f4912e02&e4ts=1533048094&e4q=f2f444ad-c5e4-4df1-80cd-3e55c3569cfb&e4c=active&e4e=snawe00000000&e4h=f630eee2aeede9d7a1ed476581ea8f68&PreviewMode=true&e4rt=Safetynet",
       "results": "",
-      "logo": "Frostbite.png",
+      "logo": "https://www.hendersonvilleraceseries.com/img/Frostbite.png",
       "tags": "5k 10k"
     }
   ]
