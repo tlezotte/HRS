@@ -374,43 +374,8 @@ img {
   -webkit-animation-delay: 1s;
 }
 
-/*Flex items*/
-.list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.series-item,
-.results-item {
-  display: flex;
-  padding: 0.5em;
-  width: 100%;
-}
-@media all and (min-width: 40em) {
-  .series-item,
-  .results-item {
-    width: 50%;
-  }
-}
-@media all and (min-width: 60em) {
-  .series-item,
-  .results-item {
-    width: 25%;
-  }
-}
-.series-content {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  width: 100%;
-  border: 1px solid #eaeaea;
-  cursor: pointer;
-}
 
-.c-logo-part h5,
-.series-content h5,
-.series-content h6,
-.results-content h6 {
+.c-logo-part h5 {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
@@ -421,45 +386,6 @@ img {
   letter-spacing: 1px;
   color: rgb(216, 213, 213);
   text-align: center;
-}
-.series-content p {
-  flex: 1 0 auto;
-  font-size: 16px;
-  line-height: 1.6em;
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: auto;
-}
-.series-content h6 {
-  margin: 0 0 10px !important;
-}
-
-.results-content {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  width: 100%;
-  border: 1px solid #eaeaea;
-  cursor: pointer;
-}
-.results-content-none {
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  width: 100%;
-}
-.results-content h6,
-.results-content-none h6 {
-  margin: 0 !important;
-}
-.results-content h6 a,
-.results-content h6 a:hover {
-  text-decoration: none;
-  color: #888888;
-}
-#race-results {
-  margin-bottom: 0 !important;
 }
 
 /* local runs */
