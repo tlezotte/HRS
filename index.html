@@ -64,15 +64,6 @@
 </head>
 
 <body>
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-
 	<!-- splash -->
 	<header class="header" id="header">
 		<div class="container">
@@ -478,11 +469,20 @@
 	<!-- /Section: faq -->
 
 	<!-- Section: facebook -->
-	<section class="main-section alabaster" id="facebook">
+<!--	<section class="main-section alabaster" id="facebook">
 		<div class="col-md-8 col-md-offset-2">
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+
 			<div class="fb-page" data-href="https://www.facebook.com/groups/hendersonvilleraceseries" data-tabs="timeline" data-width="500" data-height="150" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"></div>
 		</div>
-	</section>
+	</section> -->
 	<!-- /Section: facebook -->
 
 	<!-- Section: contact -->
