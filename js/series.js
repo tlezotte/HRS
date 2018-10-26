@@ -2,24 +2,23 @@
  * get a url parameter
  *
  * @param {String} name URL argument name
- * @returns {String} URL argument value
+ * @return {String} URL argument value
  * @public
  */
-$.urlParam = function(name){
+$.urlParam = function(name) {
   var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-  if (results==null){
+  if (results==null) {
       return null;
-  }
-  else{
+  } else {
       return decodeURI(results[1]) || 0;
   }
-}
+};
 
 
 $(function() {
   // -- Get the current date
-  var now = moment().format("YYYY-MM-DD");
-  var year = moment().format("YYYY");
+  let now = moment().format("YYYY-MM-DD");
+  let year = moment().format("YYYY");
 
 
   /**
@@ -30,8 +29,8 @@ $(function() {
   /**
    *  -- race alerts --
    */
-  var race_series = $("#race-series");
-  var race_results = $("#race-results");
+  let race_series = $("#race-series");
+  let race_results = $("#race-results");
 
   $.getJSON(seriesURL, function(data) {
 

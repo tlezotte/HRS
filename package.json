@@ -1,0 +1,23 @@
+{
+  "name": "hrs",
+  "version": "1.0.0",
+  "description": "Hendersonville Race Series",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlezotte/HRS.git"
+  },
+  "author": "Tom LeZotte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlezotte/HRS/issues"
+  },
+  "homepage": "https://github.com/tlezotte/HRS#readme",
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-google": "^0.10.0"
+  }
+}
