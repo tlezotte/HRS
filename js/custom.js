@@ -5,22 +5,21 @@
  * @returns {String} URL argument value
  * @public
  */
-$.urlParam = function(name){
+$.urlParam = function(name) {
   var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-  if (results==null){
-      return null;
+  if (results==null) {
+    return null;
+  } else {
+    return decodeURI(results[1]) || 0;
   }
-  else{
-      return decodeURI(results[1]) || 0;
-  }
-}
+};
 
 
 /**
  *  only show splash once
  */
 if (Cookies.get('splash')) {
-  $("#header").hide();
+  $('#header').hide();
 } else {
   Cookies.set('splash', 'true', { expires: 30 });
 }
@@ -33,12 +32,12 @@ if (Cookies.get('splash')) {
 // });
 
 // Since there's no list-group/tab integration in Bootstrap
-$(".list-group-item").on("click", function(e) {
-  var previous = $(this)
-    .closest(".list-group")
-    .children(".active");
-  previous.removeClass("active"); // previous list-item
-  $(e.target).addClass("active"); // activated list-item
+$('.list-group-item').on('click', function(e) {
+  let previous = $(this)
+    .closest('.list-group')
+    .children('.active');
+  previous.removeClass('active'); // previous list-item
+  $(e.target).addClass('active'); // activated list-item
 });
 
 /**
@@ -83,91 +82,91 @@ $(".main-nav li a, .servicelink").bind("click", function(event) {
   event.preventDefault();
 });
 
-var $container = $(".section-local"),
-  $body = $("body"),
-  colW = 375,
-  columns = null;
+// var $container = $(".section-local"),
+//   $body = $("body"),
+//   colW = 375,
+//   columns = null;
 
 /**
  *   -- Save Races Request data --
  */
 // Initialize Firebase
-var config = {
-  apiKey: "AIzaSyBHekFQER7m6ZE2ur0r27HHA-VgUBcmKDY",
-  authDomain: "hrs1-6cfa5.firebaseapp.com",
-  databaseURL: "https://hrs1-6cfa5.firebaseio.com",
-  projectId: "hrs1-6cfa5",
-  storageBucket: "hrs1-6cfa5.appspot.com",
-  messagingSenderId: "348880931560"
-};
-firebase.initializeApp(config);
+// var config = {
+//   apiKey: "AIzaSyBHekFQER7m6ZE2ur0r27HHA-VgUBcmKDY",
+//   authDomain: "hrs1-6cfa5.firebaseapp.com",
+//   databaseURL: "https://hrs1-6cfa5.firebaseio.com",
+//   projectId: "hrs1-6cfa5",
+//   storageBucket: "hrs1-6cfa5.appspot.com",
+//   messagingSenderId: "348880931560"
+// };
+// firebase.initializeApp(config);
 
 // set collection
-var requestRef = firebase.database().ref('requests');
+// var requestRef = firebase.database().ref('requests');
 
 // Listen for form submission
-$("#requestForm").on("submit", function(e) {
-  e.preventDefault();
+// $("#requestForm").on("submit", function(e) {
+//   e.preventDefault();
 
-  // get data
-  var name = $("#name").val();
-  var email = $("#email").val();
-  var title = $("#title").val();
-  var date = $("#date").val();
-  var time = $("#time").val();
-  var url = $("#url").val();
+//   // get data
+//   var name = $("#name").val();
+//   var email = $("#email").val();
+//   var title = $("#title").val();
+//   var date = $("#date").val();
+//   var time = $("#time").val();
+//   var url = $("#url").val();
 
-  // save request
-  saveRequest(now,name,email,title,date,time,url);
+//   // save request
+//   saveRequest(now,name,email,title,date,time,url);
 
-  // send to slack
-  sendToSlack(name,email,title,date,time,url);
+//   // send to slack
+//   sendToSlack(name,email,title,date,time,url);
 
-  // clean form data
-  this.reset();
-  // hide form after submit
-  //$("#submit_local").slideToggle();
-  $('.lity-opened').hide();
+//   // clean form data
+//   this.reset();
+//   // hide form after submit
+//   //$("#submit_local").slideToggle();
+//   $('.lity-opened').hide();
 
-  // show alert and fade in 3 seconds
-  $("#sentrequest").show();
-  setTimeout(function() {
-    $("#sentrequest").fadeOut();
-  },3000);
-});
+//   // show alert and fade in 3 seconds
+//   $("#sentrequest").show();
+//   setTimeout(function() {
+//     $("#sentrequest").fadeOut();
+//   },3000);
+// });
 
 // Save Request
-function saveRequest(now,name,email,title,date,time,url) {
-  var newRequest = requestRef.push();
+// function saveRequest(now,name,email,title,date,time,url) {
+//   var newRequest = requestRef.push();
 
-  newRequest.set({
-    requested: now,
-    name: name,
-    email: email,
-    title: title,
-    date: date,
-    time: time,
-    url: url
-  });
-}
+//   newRequest.set({
+//     requested: now,
+//     name: name,
+//     email: email,
+//     title: title,
+//     date: date,
+//     time: time,
+//     url: url
+//   });
+// }
 
 // slack post
-function sendToSlack(name,email,title,date,time,url) {
-  $.ajax({
-      data: 'payload=' + JSON.stringify({
-        "text": "name=" + name + "\nemail=" + email + "\ntitle=" + title + "\ndate=" + date + "\ntime=" + time + "\nurl=" + url,
-        "attachments": [
-          {          
-            "title": "Request stored in Firebase",
-            "title_link": "https://console.firebase.google.com/u/0/project/hrs1-6cfa5/database/hrs1-6cfa5/data",
-          }]
-      }),
-      dataType: 'json',
-      processData: false,
-      type: 'POST',
-      url: 'https://hooks.slack.com/services/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'
-  });
-}
+// function sendToSlack(name,email,title,date,time,url) {
+//   $.ajax({
+//       data: 'payload=' + JSON.stringify({
+//         "text": "name=" + name + "\nemail=" + email + "\ntitle=" + title + "\ndate=" + date + "\ntime=" + time + "\nurl=" + url,
+//         "attachments": [
+//           {          
+//             "title": "Request stored in Firebase",
+//             "title_link": "https://console.firebase.google.com/u/0/project/hrs1-6cfa5/database/hrs1-6cfa5/data",
+//           }]
+//       }),
+//       dataType: 'json',
+//       processData: false,
+//       type: 'POST',
+//       url: 'https://hooks.slack.com/services/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'
+//   });
+// }
 
 
 
