@@ -83,9 +83,9 @@ $(function() {
     var alert_level = "";
     for (var i in data.results) {
       var days_to_race = moment(data.results[i].date).diff(now, "days");
-      console.log(days_to_race);
+
       if (days_to_race >= -2 && days_to_race <= 14) {
-        if (days_to_race != 0) {
+        if (data.results[i].date.length > 4) {
           if (days_to_race <= 14 && days_to_race >= 8) {
             alert_level="alert-warning";
             alert_image="https://www.hendersonvilleraceseries.com/img/athlink_register.png";
