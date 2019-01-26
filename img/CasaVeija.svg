@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 248 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="casavieja" transform="matrix(1,0,0,1,0,-74)">
+        <g transform="matrix(1,0,0,1,0,-1)">
+            <rect x="10.839" y="138.826" width="229.851" height="1.232"/>
+        </g>
+        <g transform="matrix(0.611337,-0.611337,0.710797,0.710797,-51.8891,114.943)">
+            <rect x="122.323" y="138.599" width="8.097" height="6.665"/>
+        </g>
+        <g transform="matrix(1,0,0,1,-6.02111,-2.59011)">
+            <text x="12.044px" y="133.127px" style="font-family:'MurrayHillBold', 'Murray';font-weight:700;font-size:60px;">C<tspan x="47.084px 70.844px 91.544px 115.304px 126.464px 174.164px 187.544px 207.644px 221.804px " y="133.127px 133.127px 133.127px 133.127px 133.127px 133.127px 133.127px 133.127px 133.127px ">asa Vieja</tspan></text>
+        </g>
+        <g transform="matrix(1,0,0,1,-0.464337,-21.2691)">
+            <g transform="matrix(1.76404,0,0,1,161.42,21.2222)">
+                <g transform="matrix(0.569171,0,0,1,5.46986,0)">
+                    <text x="12.696px" y="160.219px" style="font-family:'LucidaGrande-Bold', 'Lucida Grande', sans-serif;font-weight:600;font-size:13.333px;">R</text>
+                </g>
+                <g transform="matrix(0.569171,0,0,1,9.87701,0)">
+                    <text x="22.926px" y="160.219px" style="font-family:'LucidaGrande-Bold', 'Lucida Grande', sans-serif;font-weight:600;font-size:13.333px;">I</text>
+                </g>
+                <g transform="matrix(0.569171,0,0,1,13.1124,0)">
+                    <text x="30.435px" y="160.219px" style="font-family:'LucidaGrande-Bold', 'Lucida Grande', sans-serif;font-weight:600;font-size:13.333px;">L</text>
+                </g>
+                <g transform="matrix(0.569171,0,0,1,17.1651,0)">
+                    <text x="39.842px" y="160.219px" style="font-family:'LucidaGrande-Bold', 'Lucida Grande', sans-serif;font-weight:600;font-size:13.333px;">L</text>
+                </g>
+            </g>
+            <g transform="matrix(1.26404,0,0,1,143.05,21.2222)">
+                <text x="12.696px" y="160.219px" style="font-family:'LucidaGrande', 'Lucida Grande', sans-serif;font-weight:500;font-size:20.218px;">G</text>
+            </g>
+            <g transform="matrix(1.07338,0,0,1,27.6706,21.2222)">
+                <text x="12.696px" y="160.219px" style="font-family:'AvenirNextCondensed-Bold', 'Avenir Next Condensed', sans-serif;font-weight:700;font-stretch:condensed;font-size:14.667px;">E<tspan x="19.589px 22.845px 26.101px 28.85px 36.585px 39.841px 43.097px 46.353px 50.885px 54.141px 57.397px 60.653px 68.485px 71.741px 74.997px 77.492px 85.017px 88.273px 91.529px 94.785px " y="160.219px 160.219px 160.219px 160.219px 160.219px 160.219px 160.219px 160.219px 160.219px 160.219px 160.219px 160.219px 160.219px 160.219px 160.219px 160.219px 160.219px 160.219px 160.219px 160.219px ">   X   I   C   A   N</tspan></text>
+            </g>
+            <g transform="matrix(1.26404,0,0,1,-5.26038,21.2222)">
+                <text x="12.696px" y="160.219px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:20.218px;">M</text>
+            </g>
+        </g>
+    </g>
+</svg>
