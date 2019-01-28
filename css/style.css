@@ -483,6 +483,24 @@ img {
   padding-bottom: 5px;
 }
 
+.dollar {
+  list-style-type: none;
+}
+
+.dollar::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f155";
+  display: inline-block;
+  margin-left: -.5em;
+  width: .7em;
+  padding-bottom: 5px;
+}
+
+.dollar-div {
+  margin: 2.5em 0;
+}
+
 .health::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -966,4 +984,18 @@ img {
 #support a {
   color: rgb(216, 213, 213);
   text-decoration: none;
+}
+
+
+.img-sponsor {
+  opacity: 0.6;
+}
+.img-sponsor:hover {
+  opacity: 1;
+}
+.img-partner {
+  opacity: 0.4;
+}
+.img-partner:hover {
+  opacity: 1;
 }

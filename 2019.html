@@ -55,13 +55,13 @@
 	<meta property="twitter:image" content="https://www.hendersonvilleraceseries.com/img/social/HendersonvilleRaceSeries.png">
 
 	<!-- Bootstrap Core CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.0/dist/css/bootstrap.min.css">
 
 	<!-- Fonts -->
-	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.0/lity.min.css" rel="stylesheet" type="text/css">
+	<!-- Lity -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lity@2.3.1/dist/lity.min.css>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css">
@@ -203,34 +203,20 @@
 	</section>
 	<!-- /Section: series -->
 
-	<!-- Section: support -->
+	<!-- Section: sponsors -->
 	<div class="c-logo-part" id="support">
 		<div class="container">
-			<h5>
-				<a href="mailto:ironman140.6@att.net?subject=HRS">
-					we are actively seeking for race sponsors. Additional information will be available soon
-				</a>
-			</h5>
-			<!-- <ul>
-				<li>
-					<a href="https://www.hendersonvillerunningclub.com" target="hrs">
-						<img src="img/Hendersonville-Running-Club.png" width="100" alt="">
+			<div class="row">
+				<div class="col-md-2 align-middle"><h3><em>Sponsors</em></h3></div>
+				<div class="col-md-10 text-center">
+					<a href=" https://casaviejamexicangrill.com" target="hrs">
+						<img src="img/CasaVieja.svg" width="150" class="img-sponsor" alt="Casa Vieja">
 					</a>
-				</li>
-				<li>
-					<a href="http://www.fleetfeetnashville.com/" target="hrs">
-						<img src="img/fleet-feet-sports.png" width="100" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="http://www.hvilletn.org/residents/greenways-and-bike-pedestrian-trails" target="hrs">
-						<img src="img/City-of-Hendersonville.png" width="100" alt="">
-					</a>
-				</li>
-			</ul> -->
+				</div>
+			</div>
 		</div>
 	</div>
-	<!-- /Section: support -->
+	<!-- /Section: sponsors -->
 
 	<!-- Section: gifts -->
 	<section class="main-section team" id="gifts">
@@ -248,12 +234,15 @@
 						<li class="trophy">Everyone participating in three of the four races will receive the tee shirt.</li>
 						<li class="trophy">Everyone participating in ALL four races will receive the tee shirt AND the hoodie!</li>
 					</ul>
-					<ul>
-						<li><i class="fas fa-dollar-sign"></i>15 from now until May 27th</li>
-						<li><i class="fas fa-dollar-sign"></i>20 from May 27th to September 21st</li>
-						<li><i class="fas fa-dollar-sign"></i>25 from September 21st to November 28th</li>
-						<li><i class="fas fa-dollar-sign"></i>30 from Nov 28th to December 20th</li>
-					</ul> 
+					<div  class="dollar-div">
+						<p>Price changes though out the year:</p>
+						<ul>
+							<li class="dollar">15 from now until May 27th</li>
+							<li class="dollar">20 from May 27th to September 21st</li>
+							<li class="dollar">25 from September 21st to November 28th</li>
+							<li class="dollar">30 from Nov 28th to December 20th</li>
+						</ul>
+					</div>
 				</div>
 				<div class="col-md-3 wow fadeInRight delay-05s">
 					<img src="img/Hoodie.png" alt="Tee Shirt">
@@ -351,6 +340,37 @@
 		<!-- </div> -->
 		<!-- </div> -->
 	</section>
+
+	<!-- Section: partners -->
+	<div class="c-logo-part" id="partners">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 align-middle"><h3><em>Partners</em></h3></div>
+				<div class="col-md-2 text-center">
+					<a href="https://www.visitsumnertn.com" target="hrs">
+						<img src="img/SumnerCounty.svg" width="150" class="img-partner" alt="Sumner County Tourism">
+					</a>
+				</div>
+				<div class="col-md-2 text-center">
+					<a href="https://www.hvilletn.org" target="hrs">
+						<img src="img/CityofHendersonville.svg" width="150" class="img-partner" alt="City of Hendersonville">
+					</a>
+				</div>
+				<div class="col-md-2 text-center">
+					<a href="http://www.ymcamidtn.org/sumner-county" target="hrs">
+						<img src="img/ymca.svg" height="80" class="img-partner" alt="Sumner County YMCA">
+					</a>
+				</div>
+				<div class="col-md-2 text-center">
+						<a href="http://www.thewhitelinepodcast.com" target="hrs">
+							<img src="img/theWhiteLine.svg" width="150" class="img-partner" alt="The Whiteline Podcast">
+						</a>
+				</div>
+				<div class="col-md-2 text-center">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Section: partners -->
 
 	<!-- Section: faq -->
 	<section class="main-section alabaster" id="faq">
@@ -549,27 +569,23 @@
 				Licensing information: https://bootstrapmade.com/license/
 				Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Knight
 				-->
-					<a href="https://bootstrapmade.com/bootstrap-agency-templates/">Bootstrap Agency Templates</a> by
-					<a href="https://bootstrapmade.com/">BootstrapMade</a>
 				</div>
 			</div>
 	</footer>
 	<!-- Section: /footer -->
 
 	<!-- Core JavaScript Files -->
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-	 crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-	 crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1/jquery.easing.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollToFixed/1.0.8/jquery-scrolltofixed-min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/moment@2/moment.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 	<!-- <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lity@2/dist/lity.min.js"></script>
 	<script src="https://www.hendersonvilleraceseries.com/js/custom.js"></script>
 	<script src="https://www.hendersonvilleraceseries.com/js/series.js"></script>
 	
