@@ -987,14 +987,14 @@ img {
 }
 
 
-.img-sponsor {
+/* .img-sponsor {
   opacity: 0.6;
 }
 .img-sponsor:hover {
   opacity: 1;
-}
+} */
 .img-partner {
-  opacity: 0.4;
+  opacity: 0.7;
 }
 .img-partner:hover {
   opacity: 1;
