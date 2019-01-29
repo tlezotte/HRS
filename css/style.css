@@ -324,7 +324,7 @@ img {
 
 .design {
   color: #ccc !important;
-  font-size: 10px;
+  /* font-size: 10px; */
   text-align: center;
 }
 .design a {
