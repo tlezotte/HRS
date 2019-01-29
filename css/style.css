@@ -999,3 +999,7 @@ img {
 .img-partner:hover {
   opacity: 1;
 }
+
+.container-nav {
+  width: 98%;
+}
