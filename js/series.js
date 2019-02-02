@@ -42,7 +42,7 @@ $(function() {
       output += "<a href='" + data.results[i].url + "' target='hrs'>";
       output += "<picture>";
       output += "  <source type='image/webp' srcset='" + data.results[i].logo + ".webp' width='150'>";
-      output += "  <img src='" + data.results[i].logo + "' width='150' alt='" + data.results[i].title + "' />";
+      output += "  <img src='" + data.results[i].logo + ".png' width='150' alt='" + data.results[i].title + "' />";
       output += "</picture>";
       output += "</a>";
       output += "</p>";
