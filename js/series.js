@@ -40,7 +40,10 @@ $(function() {
       output += "<h5>" + data.results[i].title + "</h5>";
       output += "<p>";
       output += "<a href='" + data.results[i].url + "' target='hrs'>";
-      output += "<img src='" + data.results[i].logo + "' width='150' alt='" + data.results[i].title + "' />";
+      output += "<picture>";
+      output += "  <source type='image/webp' srcset='" + data.results[i].logo + ".webp' width='150'>";
+      output += "  <img src='" + data.results[i].logo + "' width='150' alt='" + data.results[i].title + "' />";
+      output += "</picture>";
       output += "</a>";
       output += "</p>";
       if (data.results[i].date.length == 4) {
@@ -88,19 +91,19 @@ $(function() {
         if (data.results[i].date.length > 4) {
           if (days_to_race <= 14 && days_to_race >= 8) {
             alert_level="alert-warning";
-            alert_image="https://www.hendersonvilleraceseries.com/img/AthlinkRegister.png";
+            alert_image="https://www.hendersonvilleraceseries.com/img/AthlinkRegister";
             alert_message="Registration Alert";
             alert_message2=days_to_race + " days till race";
             alert_link=data.results[i].register;
           } else if (days_to_race <= 7 && days_to_race >= 1) {
             alert_level="alert-danger";
-            alert_image="https://www.hendersonvilleraceseries.com/img/AthlinkRegister.png";
+            alert_image="https://www.hendersonvilleraceseries.com/img/AthlinkRegister";
             alert_message="Registration Alert";
             alert_message2=days_to_race + " days till race";
             alert_link=data.results[i].register;
           } else if (days_to_race <= 0) {
             alert_level="alert-success";
-            alert_image="https://www.hendersonvilleraceseries.com/img/AthlinkResults.png";
+            alert_image="https://www.hendersonvilleraceseries.com/img/AthlinkResults";
             alert_message="Did you Run?";
             alert_message2="";
             alert_link=data.results[i].results;
@@ -123,7 +126,10 @@ $(function() {
           output += "</div>";
           output += "<div class='col-md-4 text-center'>";
           output += "<a href='" + alert_link + "' target='hrs'>";
-          output += "<img src='" + alert_image + "' height='35' alt='athlink'>";
+          output += "<picture>";
+					output += "  <source type='image/webp' srcset='" + alert_image + ".webp' height='35'>";
+					output += "  <img src='" + alert_image + ".png' height='35' alt='athlink'>";
+				  output += "</picture>";
           output += "</a>";
           output += "</div>";
           output += "</div>";
