@@ -23,7 +23,7 @@ $(function() {
   /**
    *  -- series races feed
    */
-  var seriesURL = "https://www.hendersonvilleraceseries.com/api/" + year + "_race_series.json?start_date=" + now;
+  var seriesURL = "https://tlezotte.github.io/HRS/api/" + year + "_race_series.json?start_date=" + now;
   
   /**
    *  -- race alerts --
@@ -91,19 +91,19 @@ $(function() {
         if (data.results[i].date.length > 4) {
           if (days_to_race <= 14 && days_to_race >= 8) {
             alert_level="alert-warning";
-            alert_image="https://www.hendersonvilleraceseries.com/img/AthlinkRegister";
+            alert_image="https://tlezotte.github.io/HRS/img/AthlinkRegister";
             alert_message="Registration Alert";
             alert_message2=days_to_race + " days till race";
             alert_link=data.results[i].register;
           } else if (days_to_race <= 7 && days_to_race >= 1) {
             alert_level="alert-danger";
-            alert_image="https://www.hendersonvilleraceseries.com/img/AthlinkRegister";
+            alert_image="https://tlezotte.github.io/HRS/img/AthlinkRegister";
             alert_message="Registration Alert";
             alert_message2=days_to_race + " days till race";
             alert_link=data.results[i].register;
           } else if (days_to_race <= 0) {
             alert_level="alert-success";
-            alert_image="https://www.hendersonvilleraceseries.com/img/AthlinkResults";
+            alert_image="https://tlezotte.github.io/HRS/img/AthlinkResults";
             alert_message="Did you Run?";
             alert_message2="";
             alert_link=data.results[i].results;
